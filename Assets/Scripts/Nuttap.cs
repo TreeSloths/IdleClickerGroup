@@ -8,7 +8,7 @@ public class Nuttap : MonoBehaviour
 {
 
     public Resource resource;
-    public int produceAmount;
+    public double produceAmount;
     public Text resValue;
     
     void Start()
