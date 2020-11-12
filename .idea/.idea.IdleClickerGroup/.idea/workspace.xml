@@ -28,6 +28,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SquirrelMovement.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -35,6 +38,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GoldTap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Nuttap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Resource.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SquirrelMovement.cs" />
       </list>
     </option>
   </component>
@@ -48,6 +52,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -81,6 +91,7 @@
       <workItem from="1605087817067" duration="1704000" />
       <workItem from="1605097600297" duration="714000" />
       <workItem from="1605103932302" duration="3119000" />
+      <workItem from="1605167114309" duration="1936000" />
     </task>
     <servers />
   </component>
