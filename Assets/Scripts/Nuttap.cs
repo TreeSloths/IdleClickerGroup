@@ -6,16 +6,15 @@ using UnityEngine.UI;
 
 public class Nuttap : MonoBehaviour
 {
-
     public Resource resource;
     public int produceAmount;
     public Text resValue;
-    
+
     void Start()
     {
         this.resource.ResourceAmount = PlayerPrefs.GetInt(resource.name);
     }
-    
+
     void Update()
     {
         this.resValue.text = resource.ResourceAmount.ToString("0 nuts");
@@ -25,6 +24,4 @@ public class Nuttap : MonoBehaviour
     {
         this.resource.AddResource(produceAmount);
     }
-    
-    
 }

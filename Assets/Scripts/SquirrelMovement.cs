@@ -8,18 +8,19 @@ public class SquirrelMovement : MonoBehaviour
     public float speed;
     private bool movingRight = true;
     private bool collided;
-   
-    public void Movement() 
+
+    public void Movement()
     {
-        if (collided) 
+        if (collided)
         {
             transform.Translate(Vector2.right * speed * Time.deltaTime, Space.World);
-        } else if (!collided) transform.Translate(Vector2.left * speed * Time.deltaTime, Space.World);
+        }
+        else if (!collided) transform.Translate(Vector2.left * speed * Time.deltaTime, Space.World);
     }
-    
+
     void Update()
     {
-        transform.Rotate(new Vector3(0,0,360) * speed * Time.deltaTime);
+        transform.Rotate(new Vector3(0, 0, 360) * speed * Time.deltaTime);
         Movement();
     }
 
