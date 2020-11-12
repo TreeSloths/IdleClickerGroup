@@ -6,18 +6,18 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Resource : ScriptableObject {
 
-    public double ResourceAmount {
+    public int ResourceAmount {
         get => PlayerPrefs.GetInt(name, 0);
-        set => PlayerPrefs.(name, value);
+        set => PlayerPrefs.SetInt(name, value);
     }
     
     
-    public void AddResource(double addAmount) {
+    public void AddResource(int addAmount) {
         if (addAmount > 0)
             ResourceAmount += addAmount;
     }
 
-    public void ReduceResource(double reduceBy) {
+    public void ReduceResource(int reduceBy) {
         if (ResourceAmount < reduceBy) {
             return;
         } else ResourceAmount -= reduceBy;
