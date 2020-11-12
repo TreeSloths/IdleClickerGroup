@@ -30,6 +30,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NutProduction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SquirrelMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -37,10 +38,11 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/GoldScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GoldTap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Nuttap.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Resource.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SquirrelMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveTime.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NutProduction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Nuttap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SquirrelMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Resource.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +97,7 @@
       <workItem from="1605103932302" duration="3119000" />
       <workItem from="1605167114309" duration="5010000" />
       <workItem from="1605174991510" duration="3996000" />
-      <workItem from="1605188126821" duration="4238000" />
+      <workItem from="1605188126821" duration="4663000" />
     </task>
     <servers />
   </component>
