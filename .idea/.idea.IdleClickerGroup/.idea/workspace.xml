@@ -30,6 +30,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SquirrelMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UI/UpgradeMenu/MenuOpenAnim_DropDown.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -39,6 +40,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Nuttap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Resource.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SquirrelMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/UI/UpgradeMenu/UpgradeMenuPopUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/UI/UpgradeMenu/Button_OpenUpgradeMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/UI/UpgradeMenu/MenuOpenAnim_Pop.cs" />
+        <option value="$PROJECT_DIR$/Assets/UI/UpgradeMenu/MenuOpenAnim_DropDown.cs" />
+        <option value="$PROJECT_DIR$/Assets/UI/UpgradeMenu/UpgradeMenuUI.cs" />
       </list>
     </option>
   </component>
@@ -48,6 +54,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994966" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3001007" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -70,10 +78,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14976">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="14976" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -92,6 +100,7 @@
       <workItem from="1605097600297" duration="714000" />
       <workItem from="1605103932302" duration="3119000" />
       <workItem from="1605167114309" duration="1936000" />
+      <workItem from="1605175447552" duration="12867000" />
     </task>
     <servers />
   </component>
@@ -114,5 +123,27 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2017" height="655" key="GridCell.Tab.0.bottom" timestamp="1605175472462">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="2017" height="655" key="GridCell.Tab.0.bottom/0.0.3840.2120@0.0.3840.2120" timestamp="1605175472462" />
+    <state width="2017" height="655" key="GridCell.Tab.0.center" timestamp="1605175472462">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="2017" height="655" key="GridCell.Tab.0.center/0.0.3840.2120@0.0.3840.2120" timestamp="1605175472462" />
+    <state width="2017" height="655" key="GridCell.Tab.0.left" timestamp="1605175472462">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="2017" height="655" key="GridCell.Tab.0.left/0.0.3840.2120@0.0.3840.2120" timestamp="1605175472462" />
+    <state width="2017" height="655" key="GridCell.Tab.0.right" timestamp="1605175472462">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state width="2017" height="655" key="GridCell.Tab.0.right/0.0.3840.2120@0.0.3840.2120" timestamp="1605175472462" />
+    <state x="2336" y="554" key="run.anything.popup" timestamp="1605182710302">
+      <screen x="0" y="0" width="3840" height="2120" />
+    </state>
+    <state x="2336" y="554" key="run.anything.popup/0.0.3840.2120@0.0.3840.2120" timestamp="1605182710302" />
   </component>
 </project>
