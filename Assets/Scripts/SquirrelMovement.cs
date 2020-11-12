@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class SquirrelMovement : MonoBehaviour
 {
     public float speed;
     private bool movingRight = true;
@@ -13,7 +13,7 @@ public class NewBehaviourScript : MonoBehaviour
         transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
 
-    private void OnTriggerEnter2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (movingRight == true)
         {
