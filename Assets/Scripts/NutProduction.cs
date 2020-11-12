@@ -7,34 +7,28 @@ public class NutProduction : MonoBehaviour
 {
     public float nutProductiontime;
     private float _elapsedTime;
-    private float _systemTime;
-    private float _systemTimeQuit;
+    private string _startTime;
+    private string _systemTimeQuit;
 
 
     private void Start()
     {
-        _systemTime = Convert.ToSingle(System.DateTime.Now);
-        timeSaveStart = _systemTime;
+        _startTime = System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
+        Debug.Log($"{_startTime}");
     }
 
     private void OnApplicationQuit()
     {
-        _systemTimeQuit = Convert.ToSingle(System.DateTime.Now);
+        _systemTimeQuit = System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
         timeSaveQuit = _systemTimeQuit;
     }
 
-    public float timeSaveQuit
+    public string timeSaveQuit
     {
-        get => PlayerPrefs.GetFloat("QuitTime", 0);
-        set => PlayerPrefs.SetFloat("QuitTime", value);
+        get => PlayerPrefs.GetString("QuitTime", "");
+        set => PlayerPrefs.SetString("QuitTime", value);
     }
-
-    public float timeSaveStart
-    {
-        get => PlayerPrefs.GetFloat("StartTime", 0);
-        set => PlayerPrefs.SetFloat("StartTime", value);
-    }
-
+    
     void Update()
     {
     }
