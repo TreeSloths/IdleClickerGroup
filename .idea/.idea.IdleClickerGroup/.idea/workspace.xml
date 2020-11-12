@@ -29,6 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NutProduction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SquirrelMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -39,6 +40,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Nuttap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Resource.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SquirrelMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NutProduction.cs" />
       </list>
     </option>
   </component>
@@ -93,6 +95,7 @@
       <workItem from="1605103932302" duration="3119000" />
       <workItem from="1605167114309" duration="5010000" />
       <workItem from="1605174991510" duration="3996000" />
+      <workItem from="1605188126821" duration="2109000" />
     </task>
     <servers />
   </component>
@@ -115,5 +118,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605188341919">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605188341919" />
   </component>
 </project>
