@@ -11,6 +11,7 @@ public class SquirrelMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
+        transform.Rotate(new Vector3(0,0,360) * speed * Time.deltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
