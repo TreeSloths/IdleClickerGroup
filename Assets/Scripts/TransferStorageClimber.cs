@@ -3,14 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TransferStorage : MonoBehaviour {
+public class TransferStorageClimber : MonoBehaviour {
     private Storage myStorage;
-    private SquirrelMovement squirrel;
+    private ClimbingSquirrel squirrel;
     private Storage storageContainer;
 
     private void Start() {
         myStorage = GetComponent<Storage>();
-        squirrel = GetComponent<SquirrelMovement>();
+        squirrel = GetComponent<ClimbingSquirrel>();
     }
 
     IEnumerator startTransfer() {
@@ -26,26 +26,16 @@ public class TransferStorage : MonoBehaviour {
 
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (myStorage.currentAmount > 0) {
-            if (other.CompareTag("MotherTree")) {
-                var motherTree = other.GetComponent<MotherTree>();
-                squirrel.isTransfering = true;
-                StartCoroutine(startTransfer());
-                motherTree.nuts.ResourceAmount += myStorage.currentAmount;
-                myStorage.ReduceAmount(myStorage.currentAmount);
-            }
+        if (other.CompareTag("ElevatorStorage")) {
+            storageContainer = other.GetComponent<Storage>();
+            StorageTransfer();
         }
 
         if (myStorage.currentAmount > 0) {
-            if (other.CompareTag("ElevatorStorage")) {
+            if (other.CompareTag("Storage")) {
                 storageContainer = other.GetComponent<Storage>();
                 ElevatorStorageTransfer();
             }
-        }
-
-        if (other.CompareTag("Storage")) {
-            storageContainer = other.GetComponent<Storage>();
-            StorageTransfer();
         }
     }
 
