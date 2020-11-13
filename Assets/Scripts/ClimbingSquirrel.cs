@@ -8,14 +8,15 @@ public class ClimbingSquirrel : MonoBehaviour
     public float speed;
     private bool movingUp = true;
     private bool collided;
+    public bool isTransfering;
+    public bool isWaiting;
 
-    public void Movement()
-    {
-        if (collided)
-        {
-            transform.Translate(Vector2.down * speed * Time.deltaTime, Space.World);
+    public void Movement() {
+        if (!isTransfering && !isWaiting) {
+            if (collided) {
+                transform.Translate(Vector2.down * speed * Time.deltaTime, Space.World);
+            } else if (!collided) transform.Translate(Vector2.up * speed * Time.deltaTime, Space.World);
         }
-        else if (!collided) transform.Translate(Vector2.up * speed * Time.deltaTime, Space.World);
     }
 
     void Update()
