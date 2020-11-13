@@ -5,7 +5,6 @@ using UnityEngine;
 public class UpgradeMenuUI : MonoBehaviour
 {
     float offsetX = -10.0f;
-    float minX = -10.0f;
     
     bool closeMenu = false;
 
