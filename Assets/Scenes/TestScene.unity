@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1fa1f8a86c38d49afb4b3c5a055521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAmount: 50
+  currentAmount: 0
   capacity: 50
   hasCapacity: 1
 --- !u!61 &1591406072
