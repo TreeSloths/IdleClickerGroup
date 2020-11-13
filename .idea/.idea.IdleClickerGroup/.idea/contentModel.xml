@@ -7,6 +7,11 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="AlternativePathMovement" t="Include">
+            <e p="FollowPath.cs" t="Include" />
+            <e p="MovementPath.cs" t="Include" />
+          </e>
+          <e p="ClimbingSquirrel.cs" t="Include" />
           <e p="MotherTree.cs" t="Include" />
           <e p="NutProduction.cs" t="Include" />
           <e p="Nuttap.cs" t="Include" />
@@ -15,6 +20,15 @@
           <e p="SquirrelMovement.cs" t="Include" />
           <e p="Storage.cs" t="Include" />
           <e p="TransferStorage.cs" t="Include" />
+        </e>
+        <e p="UI" t="Include">
+          <e p="UpgradeMenu" t="Include">
+            <e p="Button_OpenUpgradeMenu.cs" t="Include" />
+            <e p="EmptyGraphic.cs" t="Include" />
+            <e p="MenuOpenAnim_DropDown.cs" t="Include" />
+            <e p="MenuOpenAnim_Pop.cs" t="Include" />
+            <e p="UpgradeMenuUI.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="IdleClickerGroup.sln" t="IncludeFlat" />

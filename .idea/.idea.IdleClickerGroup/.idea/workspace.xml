@@ -31,6 +31,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SquirrelMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ClimbingSquirrel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NutProduction.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -43,6 +44,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Nuttap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SquirrelMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Resource.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FollowPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MovementPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ClimbingSquirrel.cs" />
       </list>
     </option>
   </component>
@@ -98,6 +102,7 @@
       <workItem from="1605167114309" duration="5010000" />
       <workItem from="1605174991510" duration="3996000" />
       <workItem from="1605188126821" duration="4663000" />
+      <workItem from="1605256565431" duration="4215000" />
     </task>
     <servers />
   </component>
