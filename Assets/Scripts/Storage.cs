@@ -6,9 +6,11 @@ using UnityEngine.UI;
 
 public class Storage : MonoBehaviour {
    // public Text AmountDisplay;
-    public int currentBucketAmount;
+    public int currentAmount;
     public int capacity = 50;
     public bool hasCapacity;
+
+    public bool HasSpace => currentAmount < capacity;
 
     private void Update() {
       //  AmountDisplay.transform.position = this.transform.position + new Vector3(0,5,0);
@@ -16,14 +18,14 @@ public class Storage : MonoBehaviour {
 
     public void AddAmount(int amount) {
         if (amount <= 0) {
-            currentBucketAmount += amount;
+            currentAmount += amount;
           //  UpdateDisplay();
         }
     }
 
     public void ReduceAmount(int amount) {
-        if (currentBucketAmount >= amount) {
-            currentBucketAmount -= amount;
+        if (currentAmount >= amount) {
+            currentAmount -= amount;
           //  UpdateDisplay();
         }
     }

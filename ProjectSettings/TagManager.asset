@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Storage
   - MotherTree
+  - ElevatorStorage
   layers:
   - Default
   - TransparentFX
