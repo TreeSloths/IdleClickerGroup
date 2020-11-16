@@ -12,6 +12,7 @@
             <e p="MovementPath.cs" t="Include" />
           </e>
           <e p="ClimbingSquirrel.cs" t="Include" />
+          <e p="EnableNutPile.cs" t="Include" />
           <e p="MotherTree.cs" t="Include" />
           <e p="NutProduction.cs" t="Include" />
           <e p="Nuttap.cs" t="Include" />
