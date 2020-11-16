@@ -381,6 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02cbba81ee5eded42a42187d967ffa1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTimer: 2
 --- !u!114 &473506273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -820,6 +821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d341ca9ca98611947873bb63c722e0c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTimer: 2
 --- !u!114 &845702059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -905,7 +907,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Test Button
+  m_Text: Map
 --- !u!222 &1094757717
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1150,6 +1152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02cbba81ee5eded42a42187d967ffa1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTimer: 2
 --- !u!114 &1465178028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1404,6 +1407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02cbba81ee5eded42a42187d967ffa1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTimer: 2
 --- !u!1001 &1585567804
 PrefabInstance:
   m_ObjectHideFlags: 0
