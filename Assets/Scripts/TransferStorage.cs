@@ -7,6 +7,7 @@ public class TransferStorage : MonoBehaviour {
     private Storage myStorage;
     private SquirrelMovement squirrel;
     private Storage storageContainer;
+    public float waitTimer = 2;
 
     private void Start() {
         myStorage = GetComponent<Storage>();
@@ -14,7 +15,7 @@ public class TransferStorage : MonoBehaviour {
     }
 
     IEnumerator startTransfer() {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(waitTimer);
         squirrel.isTransfering = false;
     }
 

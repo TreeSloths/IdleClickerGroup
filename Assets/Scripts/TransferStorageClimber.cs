@@ -7,6 +7,7 @@ public class TransferStorageClimber : MonoBehaviour {
     private Storage myStorage;
     private ClimbingSquirrel squirrel;
     private Storage storageContainer;
+    public float waitTimer = 2;
 
     private void Start() {
         myStorage = GetComponent<Storage>();
@@ -14,7 +15,7 @@ public class TransferStorageClimber : MonoBehaviour {
     }
 
     IEnumerator startTransfer() {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(waitTimer);
         squirrel.isTransfering = false;
     }
 
@@ -22,6 +23,7 @@ public class TransferStorageClimber : MonoBehaviour {
         if (squirrel.isWaiting) {
             ElevatorStorageTransfer();
         }
+        TurnAroundIfFull();
     }
 
 
@@ -77,6 +79,15 @@ public class TransferStorageClimber : MonoBehaviour {
             StartCoroutine(startTransfer());
             var possibleTakeAmaount = myStorage.capacity - myStorage.currentAmount;
             myStorage.currentAmount += possibleTakeAmaount;
+        }
+    }
+    private void TurnAroundIfFull()
+    {
+        if (myStorage.currentAmount >= myStorage.capacity)
+        {
+            transform.eulerAngles = new Vector3(180, 0, 0);
+            squirrel.movingUp = false;
+            squirrel.collided = true;
         }
     }
 }
