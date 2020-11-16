@@ -57,8 +57,6 @@ public class UpgradeSquirrel : MonoBehaviour {
         storage.capacity = StorageCapacity;
         transfer.waitTimer = WaitTimer;
         squirrel.speed = SquirrelSpeed;
-        if (Level == 1) {
-        }
     }
 
     private void Update() {
