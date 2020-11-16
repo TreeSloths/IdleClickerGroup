@@ -7,6 +7,7 @@ public class TransferStorageClimber : MonoBehaviour {
     private Storage myStorage;
     private ClimbingSquirrel squirrel;
     private Storage storageContainer;
+    public float waitTimer = 2;
 
     private void Start() {
         myStorage = GetComponent<Storage>();
@@ -14,7 +15,7 @@ public class TransferStorageClimber : MonoBehaviour {
     }
 
     IEnumerator startTransfer() {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(waitTimer);
         squirrel.isTransfering = false;
     }
 

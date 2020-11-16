@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3354698201527076834}
   - component: {fileID: 3354698201527076835}
   - component: {fileID: 3354698201527076832}
+  - component: {fileID: 1583622904}
+  - component: {fileID: 1583622910}
   m_Layer: 0
   m_Name: rolling_squirrel
   m_TagString: Untagged
@@ -135,3 +137,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  isTransfering: 0
+  isWaiting: 0
+--- !u!114 &1583622904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3354698201527076833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1fa1f8a86c38d49afb4b3c5a055521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentAmount: 0
+  capacity: 10
+  hasCapacity: 1
+--- !u!114 &1583622910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3354698201527076833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02cbba81ee5eded42a42187d967ffa1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitTimer: 2

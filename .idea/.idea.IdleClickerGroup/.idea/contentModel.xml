@@ -21,6 +21,7 @@
           <e p="Storage.cs" t="Include" />
           <e p="TransferStorage.cs" t="Include" />
           <e p="TransferStorageClimber.cs" t="Include" />
+          <e p="UpgradeSquirrel.cs" t="Include" />
         </e>
         <e p="UI" t="Include">
           <e p="PopUpMenu" t="Include">
