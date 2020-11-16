@@ -6,8 +6,8 @@ using UnityEngine;
 public class ClimbingSquirrel : MonoBehaviour
 {
     public float speed;
-    private bool movingUp = true;
-    private bool collided;
+    public bool movingUp = true;
+    public bool collided;
     public bool isTransfering;
     public bool isWaiting;
 
@@ -24,7 +24,7 @@ public class ClimbingSquirrel : MonoBehaviour
         Movement();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (movingUp == true)
         {
