@@ -23,6 +23,7 @@ public class TransferStorageClimber : MonoBehaviour {
         if (squirrel.isWaiting) {
             ElevatorStorageTransfer();
         }
+        TurnAroundIfFull();
     }
 
 
@@ -78,6 +79,15 @@ public class TransferStorageClimber : MonoBehaviour {
             StartCoroutine(startTransfer());
             var possibleTakeAmaount = myStorage.capacity - myStorage.currentAmount;
             myStorage.currentAmount += possibleTakeAmaount;
+        }
+    }
+    private void TurnAroundIfFull()
+    {
+        if (myStorage.currentAmount >= myStorage.capacity)
+        {
+            transform.eulerAngles = new Vector3(180, 0, 0);
+            squirrel.movingUp = false;
+            squirrel.collided = true;
         }
     }
 }
