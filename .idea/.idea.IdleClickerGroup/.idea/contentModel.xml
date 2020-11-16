@@ -29,6 +29,7 @@
           </e>
           <e p="UpgradeMenu" t="Include">
             <e p="Button_OpenUpgradeMenu.cs" t="Include" />
+            <e p="Button_UpgradeTapper.cs" t="Include" />
             <e p="EmptyGraphic.cs" t="Include" />
             <e p="MenuOpenAnim_DropDown.cs" t="Include" />
             <e p="MenuOpenAnim_Pop.cs" t="Include" />
