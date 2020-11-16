@@ -595,5 +595,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73d19b5bcc17ce9419e898ac9ee8e4e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UI_upgradeMenuPrefab: {fileID: 5891258125728953067, guid: 3aaa14140a5514941a46a771a94e55c1, type: 3}
-  parent: {fileID: 991169555}
+  UpgradeMenuPrefab: {fileID: 5891258125728953067, guid: 3aaa14140a5514941a46a771a94e55c1, type: 3}
+  Canvas: {fileID: 991169555}
