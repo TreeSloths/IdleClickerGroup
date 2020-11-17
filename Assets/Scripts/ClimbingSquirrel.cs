@@ -10,6 +10,7 @@ public class ClimbingSquirrel : MonoBehaviour
     public bool collided;
     public bool isTransfering;
     public bool isWaiting;
+    public Animator animator;
 
     public void Movement() {
         if (!isTransfering && !isWaiting) {
@@ -22,6 +23,14 @@ public class ClimbingSquirrel : MonoBehaviour
     void Update()
     {
         Movement();
+        if (isTransfering || isWaiting)
+        {
+            animator.SetBool("Transfer", true);
+        }
+        else
+        {
+            animator.SetBool("Transfer", false);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
