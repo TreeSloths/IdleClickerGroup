@@ -7,13 +7,15 @@ using UnityEngine.UI;
 public class UpgradeSquirrel : MonoBehaviour {
     private SquirrelMovement squirrel;
     public Resource nuts;
+    public Storage elevatorStorage;
 
-
+    public int capacitymodifier = 10;
     public float priceMultiplier = 5f;
     public float speedModifier = 1.1f;
     private Storage storage;
     private TransferStorage transfer;
     public Text labelText;
+    
 
     public float SquirrelSpeed {
         get => PlayerPrefs.GetFloat(squirrel.name + "Speed", 1.5f);
@@ -69,9 +71,10 @@ public class UpgradeSquirrel : MonoBehaviour {
             nuts.ReduceResource(Price);
             SquirrelSpeed *= speedModifier;
             squirrel.speed = SquirrelSpeed;
-            StorageCapacity += 50;
+            StorageCapacity += capacitymodifier;
             WaitTimer -= 0.2f;
             Price *= Mathf.RoundToInt(priceMultiplier);
+            elevatorStorage.capacity += capacitymodifier;
             Level++;
             labelText.text = $"Upgrade for {Price}\n lvl {Level}";
         }
