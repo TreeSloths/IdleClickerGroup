@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class UpgradeMenuUI : MonoBehaviour
+public class BranchMenuUI : MonoBehaviour
 {
     float offsetX = -10.0f;
     
@@ -25,7 +26,10 @@ public class UpgradeMenuUI : MonoBehaviour
     {
         if (closeMenu) PanAway();
     }
-
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0)) checkClickPos();
+    }
     public void CloseMenu()
     {
         var StartVector = new Vector2(50,0);
@@ -63,5 +67,21 @@ public class UpgradeMenuUI : MonoBehaviour
 
         if (offsetX > 1000) Destroy(gameObject);
         
+    }
+    
+    void checkClickPos()
+    {
+        PointerEventData pointerData = new PointerEventData(EventSystem.current);
+        pointerData.position = Input.mousePosition;
+        Debug.Log(pointerData.position);
+        if (pointerData.position.x > 1140 && pointerData.position.x < 1620 && pointerData.position.y > 390 && pointerData.position.y < 960)
+        {
+            //Mouse is inside menu
+        }
+        else
+        {
+            CloseMenu();
+        }
+
     }
 }

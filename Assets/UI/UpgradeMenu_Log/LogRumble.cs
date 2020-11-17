@@ -12,11 +12,8 @@ public class LogRumble : MonoBehaviour
     private float frequency;
     public bool rumbles = false;
     
-    private Grass grass;
-    private void Start()
-    {
-        grass = FindObjectOfType<Grass>();
-    }
+
+
 
     void FixedUpdate()
     {
@@ -47,7 +44,7 @@ public class LogRumble : MonoBehaviour
     }
     void startRumble()
     {
-        grass.SendMessage("ShockWave");
+ 
         X = 0;
 
         magnitude = 30;

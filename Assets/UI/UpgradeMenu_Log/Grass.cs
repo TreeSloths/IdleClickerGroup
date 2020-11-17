@@ -16,19 +16,10 @@ public class Grass : MonoBehaviour
     void FixedUpdate()
     {
         var rect = GetComponent<RectTransform>();
-        X += Time.deltaTime*2*GrassWave();
+        X += Time.deltaTime*2;
         rect.rotation = Quaternion.Euler(0,0,Mathf.Sin(X)*2f);
 
     }
 
-    float GrassWave()
-    {
-        if (grassFoldX > 0) grassFoldX *= 0.95f;
-        return grassFoldX;
-    }
 
-    void ShockWave()
-    {
-        grassFoldX = 10;
-    }
 }

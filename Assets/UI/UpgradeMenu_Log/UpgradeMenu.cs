@@ -105,14 +105,13 @@ public class UpgradeMenu : MonoBehaviour
         PointerEventData pointerData = new PointerEventData(EventSystem.current);
         pointerData.position = Input.mousePosition;
 
-        if (pointerData.position.x > 950 && pointerData.position.x < 1450 && pointerData.position.y < 560)
+        if (pointerData.position.x > 950+190 && pointerData.position.x < 1450+190 && pointerData.position.y < 560)
         {
             //Mouse is inside menu
             //TODO: make dynamic solution to check if mouse cursor is outside menu or not, with raycasts maybe.
         }
         else
         {
-            Debug.Log("close");
             if (!closed) closing = true;
             opening = false;
             open = false;

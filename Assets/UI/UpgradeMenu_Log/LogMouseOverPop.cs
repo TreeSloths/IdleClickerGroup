@@ -23,7 +23,6 @@ public class LogMouseOverPop : MonoBehaviour
     {
         checkClickPos();
 
-        
     }
     
     void checkClickPos()
@@ -33,7 +32,7 @@ public class LogMouseOverPop : MonoBehaviour
             PointerEventData pointerData = new PointerEventData(EventSystem.current);
             pointerData.position = Input.mousePosition;
 
-            if (pointerData.position.x > 750 && pointerData.position.x < 1650 && pointerData.position.y < 360)
+            if (pointerData.position.x > 990 && pointerData.position.x < 1790 && pointerData.position.y < 120)
             {
                 MouseEnterAnim();
             }

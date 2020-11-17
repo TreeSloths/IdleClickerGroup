@@ -38,13 +38,13 @@ public class MenuOpenAnim_Pop : MonoBehaviour
         {
             if (!retract)
             {
-                scale *= 1.5f;
-                if (scale >= 1.2f) retract = true;
+                scale *= 1.2f;
+                if (scale >= 1.1f) retract = true;
             }
             else
             {
                 transform.localScale = new Vector3(scale, scale, scale);
-                scale *= 0.90f;
+                scale *= 0.95f;
                 if (scale <= 1)
                 {
                     scale = 1;
