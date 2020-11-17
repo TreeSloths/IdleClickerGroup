@@ -23,6 +23,7 @@ public class ClimbingSquirrel : MonoBehaviour
     void Update()
     {
         Movement();
+        
         if (isTransfering || isWaiting)
         {
             animator.SetBool("Transfer", true);
