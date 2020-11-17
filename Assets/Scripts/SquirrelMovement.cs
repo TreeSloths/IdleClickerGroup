@@ -32,7 +32,7 @@ public class SquirrelMovement : MonoBehaviour
 
     void ChangeSprite()
     {
-        if (isTransfering)
+        if (isTransfering || isWaiting)
         {
             spriteRenderer.sprite = spriteArray[1];
         }
