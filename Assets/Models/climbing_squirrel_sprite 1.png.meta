@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 7ecf8ba30621bf440988fd3bf313778f
+guid: b6d27531e3f51994db6eda720d86ff00
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2797397424505197880
-    second: climbing_squirrel_sprite_0
+      213: 2727212928366457709
+    second: climbing_squirrel_sprite 1_0
   - first:
-      213: 7866070638596481669
-    second: climbing_squirrel_sprite_1
+      213: 8149915939385282180
+    second: climbing_squirrel_sprite 1_1
   - first:
-      213: 7218127223926714375
-    second: climbing_squirrel_sprite_2
+      213: -7504355233609708704
+    second: climbing_squirrel_sprite 1_2
   - first:
-      213: 7013830515010558225
-    second: climbing_squirrel_sprite_3
+      213: -602075017822318396
+    second: climbing_squirrel_sprite 1_3
   - first:
-      213: -4011441303617333616
-    second: climbing_squirrel_sprite_4
+      213: -7887141710281933956
+    second: climbing_squirrel_sprite 1_4
   - first:
-      213: 6145527822817866194
-    second: climbing_squirrel_sprite_5
+      213: 8300035608390053007
+    second: climbing_squirrel_sprite 1_5
   - first:
-      213: -1106674307113502003
-    second: climbing_squirrel_sprite_6
+      213: -7290414773799912717
+    second: climbing_squirrel_sprite 1_6
   - first:
-      213: 4035408209171341067
-    second: climbing_squirrel_sprite_7
+      213: -8555274659399364344
+    second: climbing_squirrel_sprite 1_7
   - first:
-      213: 4529210636874903785
-    second: climbing_squirrel_sprite_8
+      213: 6249262738207294333
+    second: climbing_squirrel_sprite 1_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -140,7 +140,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: climbing_squirrel_sprite_0
+      name: climbing_squirrel_sprite 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -148,20 +148,20 @@ TextureImporter:
         width: 219
         height: 543
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ca66c81dd5ad29d0800000000000000
-      internalID: -2797397424505197880
+      spriteID: d63b22e75b109d520800000000000000
+      internalID: 2727212928366457709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: climbing_squirrel_sprite_1
+      name: climbing_squirrel_sprite 1_1
       rect:
         serializedVersion: 2
         x: 220
@@ -169,41 +169,41 @@ TextureImporter:
         width: 216
         height: 543
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5826cafc195e92d60800000000000000
-      internalID: 7866070638596481669
+      spriteID: 48e8a54ed515a1170800000000000000
+      internalID: 8149915939385282180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: climbing_squirrel_sprite_2
+      name: climbing_squirrel_sprite 1_2
       rect:
         serializedVersion: 2
-        x: 438
+        x: 436
         y: 93
         width: 221
         height: 543
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7007ab58770fb2460800000000000000
-      internalID: 7218127223926714375
+      spriteID: 06b8950ccac2bd790800000000000000
+      internalID: -7504355233609708704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: climbing_squirrel_sprite_3
+      name: climbing_squirrel_sprite 1_3
       rect:
         serializedVersion: 2
         x: 680
@@ -211,20 +211,20 @@ TextureImporter:
         width: 182
         height: 550
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 119dff941b1265160800000000000000
-      internalID: 7013830515010558225
+      spriteID: 4c0509216fff4a7f0800000000000000
+      internalID: -602075017822318396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: climbing_squirrel_sprite_4
+      name: climbing_squirrel_sprite 1_4
       rect:
         serializedVersion: 2
         x: 884
@@ -232,20 +232,20 @@ TextureImporter:
         width: 180
         height: 563
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0961f8c436f7458c0800000000000000
-      internalID: -4011441303617333616
+      spriteID: c7b7a71076e3b8290800000000000000
+      internalID: -7887141710281933956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: climbing_squirrel_sprite_5
+      name: climbing_squirrel_sprite 1_5
       rect:
         serializedVersion: 2
         x: 1083
@@ -253,20 +253,20 @@ TextureImporter:
         width: 180
         height: 557
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d1b6549efc494550800000000000000
-      internalID: 6145527822817866194
+      spriteID: f8cae2d0966af2370800000000000000
+      internalID: 8300035608390053007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: climbing_squirrel_sprite_6
+      name: climbing_squirrel_sprite 1_6
       rect:
         serializedVersion: 2
         x: 1261
@@ -274,20 +274,20 @@ TextureImporter:
         width: 213
         height: 547
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcab272c49d44a0f0800000000000000
-      internalID: -1106674307113502003
+      spriteID: 3fa7566b36e33da90800000000000000
+      internalID: -7290414773799912717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: climbing_squirrel_sprite_7
+      name: climbing_squirrel_sprite 1_7
       rect:
         serializedVersion: 2
         x: 1476
@@ -295,20 +295,20 @@ TextureImporter:
         width: 245
         height: 537
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0f5a5fb266a00830800000000000000
-      internalID: 4035408209171341067
+      spriteID: 801999a660f854980800000000000000
+      internalID: -8555274659399364344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: climbing_squirrel_sprite_8
+      name: climbing_squirrel_sprite 1_8
       rect:
         serializedVersion: 2
         x: 1722
@@ -316,14 +316,14 @@ TextureImporter:
         width: 248
         height: 537
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e079d3d31dfade30800000000000000
-      internalID: 4529210636874903785
+      spriteID: d734ee2b957d9b650800000000000000
+      internalID: 6249262738207294333
       vertices: []
       indices: 
       edges: []
