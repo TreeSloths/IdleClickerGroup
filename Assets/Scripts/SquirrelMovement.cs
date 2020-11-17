@@ -10,6 +10,10 @@ public class SquirrelMovement : MonoBehaviour
     private bool collided;
     public bool isTransfering;
     public bool isWaiting;
+    public SpriteRenderer spriteRenderer;
+    public Sprite newSprite;
+    public Sprite[] spriteArray;
+    
 
     public void Movement() {
         if (!isTransfering && !isWaiting) {
@@ -23,6 +27,19 @@ public class SquirrelMovement : MonoBehaviour
     void Update()
     {
         Movement();
+        ChangeSprite();
+    }
+
+    void ChangeSprite()
+    {
+        if (isTransfering)
+        {
+            spriteRenderer.sprite = spriteArray[1];
+        }
+        else
+        {
+            spriteRenderer.sprite = spriteArray[0];
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
