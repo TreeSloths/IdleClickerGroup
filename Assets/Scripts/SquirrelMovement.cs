@@ -22,7 +22,6 @@ public class SquirrelMovement : MonoBehaviour
             } else if (!collided) transform.Translate(Vector2.left * speed * Time.deltaTime, Space.World);
         }
     }
-    
 
     void Update()
     {
