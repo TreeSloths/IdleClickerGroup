@@ -17,12 +17,13 @@ public class Boosters : MonoBehaviour {
     public float timeModifier = .2f;
     public Storage climberStorage;
     public int price = 1000;
+    private bool isBoosting;
 
     
 
     
-    IEnumerator BoostFor1MIN() {
-        yield return new WaitForSeconds(60f);
+    IEnumerator BoostFor5MIN() {
+        yield return new WaitForSeconds(300);
         for (var i = 0; i < squirrels.Count; i++) {
             squirrels[i].speed -= speedModifier;
             transfer[i].WaitTimer += timeModifier;
@@ -35,10 +36,11 @@ public class Boosters : MonoBehaviour {
 
         climbingSquirrel.speed -= speedModifier;
         transferClimber.waitTimer += timeModifier;
+        isBoosting = false;
     }
 
     public void PurchaseBooster() {
-        if (nuts.ResourceAmount < price) {
+        if (nuts.ResourceAmount < price && !isBoosting) {
             return;
         } else {
             nuts.ReduceResource(price);
@@ -62,7 +64,8 @@ public class Boosters : MonoBehaviour {
             climbingSquirrel.speed += speedModifier;
             transferClimber.waitTimer -= timeModifier;
 
-            StartCoroutine(BoostFor1MIN());
+            StartCoroutine(BoostFor5MIN());
+            isBoosting = true;
         }
     }
 }
