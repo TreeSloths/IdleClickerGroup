@@ -584,7 +584,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02cbba81ee5eded42a42187d967ffa1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimer: 2
 --- !u!114 &473506273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,8 +596,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1fa1f8a86c38d49afb4b3c5a055521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAmount: 0
-  capacity: 10
   hasCapacity: 0
 --- !u!114 &473506274 stripped
 MonoBehaviour:
@@ -1311,8 +1308,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1fa1f8a86c38d49afb4b3c5a055521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAmount: 0
-  capacity: 50
   hasCapacity: 0
 --- !u!61 &828620491
 BoxCollider2D:
@@ -1579,8 +1574,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1fa1f8a86c38d49afb4b3c5a055521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAmount: 0
-  capacity: 50
   hasCapacity: 0
 --- !u!61 &1213225831
 BoxCollider2D:
@@ -1652,8 +1645,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1fa1f8a86c38d49afb4b3c5a055521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAmount: 0
-  capacity: 50
   hasCapacity: 0
 --- !u!61 &1244186676
 BoxCollider2D:
@@ -1800,6 +1791,7 @@ MonoBehaviour:
   - {fileID: 1693082446}
   climbingSquirrel: {fileID: 484908870}
   transferClimber: {fileID: 484908868}
+  timeModifier: 0.2
   climberStorage: {fileID: 484908867}
   price: 1000
 --- !u!114 &1275158323
@@ -1959,7 +1951,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02cbba81ee5eded42a42187d967ffa1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimer: 2
 --- !u!114 &1465178028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1972,8 +1963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1fa1f8a86c38d49afb4b3c5a055521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAmount: 0
-  capacity: 10
   hasCapacity: 0
 --- !u!114 &1465178029 stripped
 MonoBehaviour:
@@ -2482,8 +2471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1fa1f8a86c38d49afb4b3c5a055521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAmount: 0
-  capacity: 50
   hasCapacity: 1
 --- !u!61 &1659624964
 BoxCollider2D:
@@ -2665,8 +2652,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1fa1f8a86c38d49afb4b3c5a055521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAmount: 0
-  capacity: 10
   hasCapacity: 0
 --- !u!114 &1693082446
 MonoBehaviour:
@@ -2680,7 +2665,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02cbba81ee5eded42a42187d967ffa1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimer: 2
 --- !u!114 &1693082447 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3354698201527076832, guid: 261ce9637cf4ae449a2cdec0e4269a76, type: 3}
@@ -2981,8 +2965,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1fa1f8a86c38d49afb4b3c5a055521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAmount: 0
-  capacity: 100
   hasCapacity: 1
 --- !u!4 &2028823858 stripped
 Transform:
@@ -3355,6 +3337,10 @@ PrefabInstance:
     - target: {fileID: 5885001569748516180, guid: 3f3ca36107d670647b92f9f819b43620, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5885001569748516180, guid: 3f3ca36107d670647b92f9f819b43620, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5885001569748516181, guid: 3f3ca36107d670647b92f9f819b43620, type: 3}
       propertyPath: m_RootOrder
