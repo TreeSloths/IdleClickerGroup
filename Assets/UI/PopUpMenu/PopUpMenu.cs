@@ -15,7 +15,7 @@ public class PopUpMenu : MonoBehaviour
     {
         this.popUpMenuText.text = $"Welcome back, this is the time you were last online: {SaveTime.timeSaveQuit}";
         this.popupMenuRes.text =
-            $"This is the amount of resources you have harvested while you were offline: {AddOfflineRes.addingResToTime}";
+            $"This is the amount of resources you have harvested while you were offline: {AddOfflineRes.addOfflineRes}";
     }
 
     void Update()

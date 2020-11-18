@@ -719,7 +719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SaveTime: {fileID: 155643028}
-  offlineRes: 0
+  offlineRes: 1.6
   addingResToTime: 0
 --- !u!4 &1155234381
 Transform:
