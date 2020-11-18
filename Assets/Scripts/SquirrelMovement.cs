@@ -13,7 +13,6 @@ public class SquirrelMovement : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Sprite newSprite;
     public Sprite[] spriteArray;
-    
 
     public void Movement() {
         if (!isTransfering && !isWaiting) {

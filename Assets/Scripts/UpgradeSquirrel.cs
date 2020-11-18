@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UpgradeSquirrel : MonoBehaviour {
-    private SquirrelMovement squirrel;
+    public SquirrelMovement squirrel;
     public Resource nuts;
     public Storage elevatorStorage;
 
@@ -14,7 +15,7 @@ public class UpgradeSquirrel : MonoBehaviour {
     public float speedModifier = 1.1f;
     private Storage storage;
     private TransferStorage transfer;
-    public Text labelText;
+   // public Text labelText;
     
 
     public float SquirrelSpeed {
@@ -26,7 +27,7 @@ public class UpgradeSquirrel : MonoBehaviour {
     }
 
     public int Price {
-        get => PlayerPrefs.GetInt(squirrel.name + "UpgradePrice", 400);
+        get => PlayerPrefs.GetInt(squirrel.name + "UpgradePrice", 100);
         set => PlayerPrefs.SetInt(squirrel.name + "UpgradePrice", value);
     }
 
@@ -39,7 +40,7 @@ public class UpgradeSquirrel : MonoBehaviour {
         get => PlayerPrefs.GetInt(squirrel.name + "Capacity", 20);
         set {
             PlayerPrefs.SetInt(squirrel.name + "Capacity", value);
-            storage.capacity = value;
+            storage.Capacity = value;
         }
     }
 
@@ -47,17 +48,16 @@ public class UpgradeSquirrel : MonoBehaviour {
         get => PlayerPrefs.GetFloat(squirrel.name + "waitTime", 2f);
         set {
             PlayerPrefs.SetFloat(squirrel.name + "waitTime", value);
-            transfer.waitTimer = value;
+            transfer.WaitTimer = value;
         }
     }
 
     private void Start() {
-        squirrel = GetComponent<SquirrelMovement>();
         storage = squirrel.GetComponent<Storage>();
         transfer = squirrel.GetComponent<TransferStorage>();
-        labelText.text = $"Upgrade for {Price}\n lvl {Level}";
-        storage.capacity = StorageCapacity;
-        transfer.waitTimer = WaitTimer;
+       // labelText.text = $"Upgrade for {Price}\n lvl {Level}";
+        storage.Capacity = StorageCapacity;
+        transfer.WaitTimer = WaitTimer;
         squirrel.speed = SquirrelSpeed;
     }
 
@@ -74,9 +74,9 @@ public class UpgradeSquirrel : MonoBehaviour {
             StorageCapacity += capacitymodifier;
             WaitTimer -= 0.2f;
             Price *= Mathf.RoundToInt(priceMultiplier);
-            elevatorStorage.capacity += capacitymodifier;
+            elevatorStorage.Capacity += capacitymodifier;
             Level++;
-            labelText.text = $"Upgrade for {Price}\n lvl {Level}";
+           // labelText.text = $"Upgrade for {Price}\n lvl {Level}";
         }
     }
 }
