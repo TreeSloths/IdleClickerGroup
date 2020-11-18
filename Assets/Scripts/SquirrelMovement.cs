@@ -13,7 +13,6 @@ public class SquirrelMovement : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public Sprite newSprite;
     public Sprite[] spriteArray;
-    
 
     public void Movement() {
         if (!isTransfering && !isWaiting) {
@@ -23,6 +22,7 @@ public class SquirrelMovement : MonoBehaviour
             } else if (!collided) transform.Translate(Vector2.left * speed * Time.deltaTime, Space.World);
         }
     }
+    
 
     void Update()
     {
