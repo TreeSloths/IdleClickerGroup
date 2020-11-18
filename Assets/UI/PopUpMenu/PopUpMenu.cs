@@ -6,29 +6,19 @@ using UnityEngine.UI;
 
 public class PopUpMenu : MonoBehaviour
 {
-
     public Text popUpMenuText;
+    public Text popupMenuRes;
     public SaveTime SaveTime;
+    public AddOfflineRes AddOfflineRes;
 
-    private long comparing1;
-    private double comparing2;
-    private double comparing3;
-    
-    
     void Start()
     {
-        // nu minus då
-        
-        
-
-
-
-        this.popUpMenuText.text = $"Welcome back, This is the time you were last online: {SaveTime.timeSaveQuit}" +
-                                  $"Test";
+        this.popUpMenuText.text = $"Welcome back, this is the time you were last online: {SaveTime.timeSaveQuit}";
+        this.popupMenuRes.text =
+            $"This is the amount of resources you have harvested while you were offline: {AddOfflineRes.addingResToTime}";
     }
-    
+
     void Update()
     {
-        
     }
 }
