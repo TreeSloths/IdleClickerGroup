@@ -1,23 +1,33 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SaveTime : MonoBehaviour
 {
-    public string systemStart;
-    public string systemQuit;
+    public DateTime systemStart;
+    public DateTime systemQuit;
+    private readonly DateTime startOfTime = new DateTime(1970, 1, 1, 0, 0, 0);
 
+    public long NowMilliSeconds
+    {
+        get
+        {
+            DateTime converting = Convert.ToDateTime(timeSaveQuit);
+            return Convert.ToInt64(converting.Subtract(this.startOfTime).TotalSeconds);
+        }
+    }
 
     private void Start()
     {
-        systemStart = System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
-        Debug.Log($"{systemStart}");
+        systemStart = DateTime.Now;
+        Debug.Log($"{NowMilliSeconds}");
     }
 
     private void OnApplicationQuit()
     {
-        systemQuit = System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
-        timeSaveQuit = systemQuit;
+        systemQuit = DateTime.Now;
+        timeSaveQuit = systemQuit.ToString();
     }
 
     public string timeSaveQuit
