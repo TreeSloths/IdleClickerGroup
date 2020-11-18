@@ -11,8 +11,8 @@ public class AddOfflineRes : MonoBehaviour
 
     private void Start()
     {
-        var _nowMinusThen = SaveTime.NowinSeconds - SaveTime.Quitinseconds;
-
+        var _nowMinusThen = SaveTime.Quitinseconds - SaveTime.NowinSeconds;
+        Debug.Log(_nowMinusThen);
         // DO NOT INSERT ANYTHING IN addingResToTime
         addingResToTime = _nowMinusThen * offlineRes;
     }
