@@ -5,7 +5,8 @@ using UnityEngine.EventSystems;
 
 public class Button_OpenBranchMenu : MonoBehaviour
 {
-
+    public Branch_MoveAside branchMoveLeft;
+    public Branch_MoveAside branchMoveRight;
     
     public GameObject UpgradeMenuPrefab;
     public Transform Canvas;
@@ -52,14 +53,16 @@ public class Button_OpenBranchMenu : MonoBehaviour
     {
         PointerEventData pointerData = new PointerEventData(EventSystem.current);
         pointerData.position = Input.mousePosition;
-Debug.Log(pointerData.position);
+
         if (pointerData.position.x > Xmin && pointerData.position.x < Xmax && pointerData.position.y > Ymin && pointerData.position.y < Ymax)
         {
             MouseEnterAnim();
+
         }
         else
         {
             MouseLeaveAnim();
+
         }
         
         

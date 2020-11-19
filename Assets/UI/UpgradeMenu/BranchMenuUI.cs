@@ -73,7 +73,6 @@ public class BranchMenuUI : MonoBehaviour
     {
         PointerEventData pointerData = new PointerEventData(EventSystem.current);
         pointerData.position = Input.mousePosition;
-        Debug.Log(pointerData.position);
         if (pointerData.position.x > 1140 && pointerData.position.x < 1620 && pointerData.position.y > 390 && pointerData.position.y < 960)
         {
             //Mouse is inside menu
