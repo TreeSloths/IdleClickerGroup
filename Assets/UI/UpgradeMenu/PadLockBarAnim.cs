@@ -11,6 +11,7 @@ public class PadLockBarAnim : MonoBehaviour
     private Vector2 position;
 
     public UnlockBranch unlockBranch;
+    public GameObject banner;
     
     private bool unlock = false;
 
@@ -27,6 +28,7 @@ public class PadLockBarAnim : MonoBehaviour
         if (unlock) UnlockAnim();
         if (delay >= 20)
         {
+            banner.GetComponent<ExtendUpgradeBanner>().enabled = true;
             unlockBranch.HideButtonAfterUnlock();
         }
     }

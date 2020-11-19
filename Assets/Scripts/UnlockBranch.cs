@@ -18,6 +18,7 @@ public class UnlockBranch : MonoBehaviour
     public GameObject branch01;
     public GameObject branch02;
 
+    public GameObject banner;
     public bool IsUnlocked {
         get => intToBool(PlayerPrefs.GetInt(name + "bool", 0));
         set => PlayerPrefs.SetInt(name + "bool", boolToInt(value));
@@ -37,6 +38,7 @@ public class UnlockBranch : MonoBehaviour
             UpgradeSquirrelButton.GetComponent<Image>().enabled = true;
             padlockBar.GetComponent<PadLockBarAnim>().Unlock();
             this.GetComponent<EmptyGraphic>().enabled = false;
+
         }
     }
 
@@ -78,5 +80,7 @@ public class UnlockBranch : MonoBehaviour
         padlockText.GetComponent<Text>().enabled = false;
         UpgradeSquirrelButton.GetComponent<Image>().enabled = true;
         this.GetComponent<EmptyGraphic>().enabled = false;
+
+        banner.GetComponent<ExtendUpgradeBanner>().enabled = true;
     }
 }
