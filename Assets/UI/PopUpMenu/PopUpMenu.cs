@@ -8,14 +8,14 @@ public class PopUpMenu : MonoBehaviour
 {
     public Text popUpMenuText;
     public Text popupMenuRes;
+    public Text popUpMenuResV;
     public SaveTime SaveTime;
     public AddOfflineRes AddOfflineRes;
-    private DateTime displayTime;
-
+    
     void Start()
     {
         this.popUpMenuText.text = $"This is the time you were last online: {SaveTime.systemStart}";
-        this.popupMenuRes.text =
-            $"This is the amount of resources you have harvested while you were offline: {AddOfflineRes.production}";
+        this.popupMenuRes.text = $"This is the amount of resources you have harvested while you were offline:";
+        this.popUpMenuResV.text = $"{AddOfflineRes.production}";
     }
 }
