@@ -7,19 +7,15 @@ public class TransferStorageClimber : MonoBehaviour {
     private Storage myStorage;
     private ClimbingSquirrel squirrel;
     private Storage storageContainer;
+    public float waitTimer = 2;
 
-
-    public float WaitTimer {
-        get => PlayerPrefs.GetFloat(name+"Timer",2f);
-        set => PlayerPrefs.SetFloat(name+"Timer",value);
-    }
     private void Start() {
         myStorage = GetComponent<Storage>();
         squirrel = GetComponent<ClimbingSquirrel>();
     }
 
     IEnumerator startTransfer() {
-        yield return new WaitForSeconds(WaitTimer);
+        yield return new WaitForSeconds(waitTimer);
         squirrel.isTransfering = false;
     }
 

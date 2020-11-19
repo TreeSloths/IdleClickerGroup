@@ -10,6 +10,7 @@ public class UpgradeSquirrel : MonoBehaviour {
     public Resource nuts;
     public Storage elevatorStorage;
 
+    public float waitTimerModifier;
     public int capacitymodifier = 10;
     public float priceMultiplier = 2.2f;
     public float speedModifier = 1.2f;
@@ -75,8 +76,10 @@ public class UpgradeSquirrel : MonoBehaviour {
             Price *= Mathf.RoundToInt(priceMultiplier);
             elevatorStorage.Capacity += capacitymodifier;
             Level++;
-            if (WaitTimer > 0.5) {
+           
+            if (WaitTimer > 0.4) {
                 WaitTimer -= 0.05f;
+                transfer.WaitTimer = WaitTimer;
             }
            // labelText.text = $"Upgrade for {Price}\n lvl {Level}";
         }

@@ -22,7 +22,7 @@ public class SaveTime : MonoBehaviour
     private void Start()
     {
         systemStart = DateTime.Now;
-        Debug.Log($"{NowinSeconds}");
+      //  Debug.Log($"{NowinSeconds}");
     }
 
     private void OnApplicationQuit()
