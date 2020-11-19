@@ -282,6 +282,17 @@ PrefabInstance:
       objectReference: {fileID: -1853950295816597105, guid: 5154e6e5c008d9a40ab09e5cb403777c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 261ce9637cf4ae449a2cdec0e4269a76, type: 3}
+--- !u!114 &120948567 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1583622910, guid: 261ce9637cf4ae449a2cdec0e4269a76, type: 3}
+  m_PrefabInstance: {fileID: 120948566}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02cbba81ee5eded42a42187d967ffa1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &187548042
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,7 +686,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02cbba81ee5eded42a42187d967ffa1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBoosted: 0
+  isBoosted10: 0
+  isBoosted5: 0
 --- !u!114 &473506273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1010,6 +1022,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 374505336}
     m_Modifications:
+    - target: {fileID: 5117317717735328302, guid: 0af914d18512caf49a16cf68e7ca70ad, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 649413792}
+    - target: {fileID: 5117317717735328302, guid: 0af914d18512caf49a16cf68e7ca70ad, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PurchaseBoost10x5min
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117317717735328302, guid: 0af914d18512caf49a16cf68e7ca70ad, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: IncomeBooster, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117317717735328302, guid: 0af914d18512caf49a16cf68e7ca70ad, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5891258125728953064, guid: 0af914d18512caf49a16cf68e7ca70ad, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1100,6 +1128,112 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0af914d18512caf49a16cf68e7ca70ad, type: 3}
+--- !u!1 &649413787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8326558953634919286, guid: 0af914d18512caf49a16cf68e7ca70ad, type: 3}
+  m_PrefabInstance: {fileID: 649413786}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &649413788 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4002195744501617170, guid: 0af914d18512caf49a16cf68e7ca70ad, type: 3}
+  m_PrefabInstance: {fileID: 649413786}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649413787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &649413789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 869104845910703901, guid: 0af914d18512caf49a16cf68e7ca70ad, type: 3}
+  m_PrefabInstance: {fileID: 649413786}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &649413790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649413787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687343c8904bfc5439d032b002c7f995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundSquirrel: {fileID: 120948567}
+  nuts: {fileID: 11400000, guid: d92c75b300e97ae42870aee23acb1a81, type: 2}
+  price: 800
+--- !u!114 &649413791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649413787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 649413788}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 649413790}
+        m_TargetAssemblyTypeName: IncomeBooster, Assembly-CSharp
+        m_MethodName: PurchaseBoost8x10min
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &649413792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649413789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 687343c8904bfc5439d032b002c7f995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundSquirrel: {fileID: 120948567}
+  nuts: {fileID: 11400000, guid: d92c75b300e97ae42870aee23acb1a81, type: 2}
+  price: 1000
 --- !u!1001 &678584902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2187,7 +2321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02cbba81ee5eded42a42187d967ffa1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBoosted: 0
+  isBoosted10: 0
+  isBoosted5: 0
 --- !u!114 &1465178028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3171,7 +3306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02cbba81ee5eded42a42187d967ffa1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBoosted: 0
+  isBoosted10: 0
+  isBoosted5: 0
 --- !u!1 &1752530138
 GameObject:
   m_ObjectHideFlags: 0

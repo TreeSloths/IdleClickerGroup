@@ -10,16 +10,31 @@ public class IncomeBooster : MonoBehaviour {
 
     IEnumerator Boosted() {
         yield return new WaitForSeconds(300);
-        groundSquirrel.isBoosted = false;
+        groundSquirrel.isBoosted10 = false;
+        isBoosting = false;
+    }
+    IEnumerator Boosted8() {
+        yield return new WaitForSeconds(600);
+        groundSquirrel.isBoosted5 = false;
         isBoosting = false;
     }
 
-    public void PurchaseBoost() {
+    public void PurchaseBoost10x5min() {
         if (nuts.ResourceAmount >= price && !isBoosting) {
             nuts.ReduceResource(price);
             StartCoroutine(Boosted());
-            groundSquirrel.isBoosted = true;
+            groundSquirrel.isBoosted10 = true;
             isBoosting = true;
         } else return;
     }
+    
+    public void PurchaseBoost8x10min() {
+        if (nuts.ResourceAmount >= price && !isBoosting) {
+            nuts.ReduceResource(price);
+            StartCoroutine(Boosted());
+            groundSquirrel.isBoosted5 = true;
+            isBoosting = true;
+        } else return;
+    }
+    
 }
