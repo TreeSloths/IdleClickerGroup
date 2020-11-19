@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\jimmie\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\jimmie\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_IdleClickerGroup.746110020.00" t="ExcludeRecursive" />
-    <e p="C:\Users\jimmie\Documents\IdleClickerGroup" t="IncludeRecursive">
+    <e p="C:\Users\vicio\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\vicio\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_IdleClickerGroup.100360799.00" t="ExcludeRecursive" />
+    <e p="C:\Users\vicio\Projects\Forsberg\IdleClickerGroup" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="AddOfflineRes.cs" t="Include" />
           <e p="AlternativePathMovement" t="Include">
             <e p="FollowPath.cs" t="Include" />
             <e p="MovementPath.cs" t="Include" />
@@ -26,6 +27,8 @@
           <e p="TransferStorage.cs" t="Include" />
           <e p="TransferStorageClimber.cs" t="Include" />
           <e p="UnlockBranch.cs" t="Include" />
+          <e p="UpgradeClimbingSquirrel.cs" t="Include" />
+          <e p="UpgradeGroundSquirrel.cs" t="Include" />
           <e p="UpgradeSquirrel.cs" t="Include" />
         </e>
         <e p="UI" t="Include">

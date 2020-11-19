@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class UpgradeSquirrel : MonoBehaviour {
-    public SquirrelMovement squirrel;
+public class UpgradeGroundSquirrel : MonoBehaviour{
+  public SquirrelMovement squirrel;
     public Resource nuts;
-    public Storage elevatorStorage;
+    public Storage groundStorage;
 
-    public int capacitymodifier = 10;
+    public int capacitymodifier = 50;
     public float priceMultiplier = 2.2f;
-    public float speedModifier = 1.2f;
+    public float speedModifier = 1.3f;
     private Storage storage;
     private TransferStorage transfer;
    // public Text labelText;
@@ -27,7 +24,7 @@ public class UpgradeSquirrel : MonoBehaviour {
     }
 
     public int Price {
-        get => PlayerPrefs.GetInt(squirrel.name + "UpgradePrice", 100);
+        get => PlayerPrefs.GetInt(squirrel.name + "UpgradePrice", 150);
         set => PlayerPrefs.SetInt(squirrel.name + "UpgradePrice", value);
     }
 
@@ -73,7 +70,7 @@ public class UpgradeSquirrel : MonoBehaviour {
             squirrel.speed = SquirrelSpeed;
             StorageCapacity += capacitymodifier;
             Price *= Mathf.RoundToInt(priceMultiplier);
-            elevatorStorage.Capacity += capacitymodifier;
+            groundStorage.Capacity += capacitymodifier;
             Level++;
             if (WaitTimer > 0.5) {
                 WaitTimer -= 0.05f;
@@ -82,3 +79,4 @@ public class UpgradeSquirrel : MonoBehaviour {
         }
     }
 }
+
