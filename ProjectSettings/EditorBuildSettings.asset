@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Oskars_temp_scene.unity
     guid: dc0bf3c8bf9cf6446b39fbbf8212a312
+  - enabled: 1
+    path: Assets/Scenes/TestSceneJimmie.unity
+    guid: a0e942f92dace3843bb0ab9790882dbe
+  - enabled: 1
+    path: Assets/Scenes/HomeScene.unity
+    guid: 6ae7c58889d95f14e9095940ab08a9be
   m_configObjects: {}
