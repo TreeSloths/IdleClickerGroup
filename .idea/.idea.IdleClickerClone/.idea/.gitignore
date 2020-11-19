@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/modules.xml
+/.idea.IdleClickerClone.iml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\vicio\Projects\Forsberg\IdleClickerClone\.idea\.idea.IdleClickerClone\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
