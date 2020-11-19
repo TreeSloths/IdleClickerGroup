@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class ExtendUpgradeBanner : MonoBehaviour
 {
+    public Text text;
+    
     private float scale = 0.01f;
     private float maxScale = 1.2f;
     bool done = false;
@@ -31,6 +33,8 @@ public class ExtendUpgradeBanner : MonoBehaviour
     {
         checkClickPos();
         this.GetComponent<Image>().enabled = render;
+
+        if (render) text.GetComponent<Text>().enabled = true;
     }
 
 
