@@ -1,13 +1,19 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.iOS.Xcode;
 using UnityEngine;
 
 public class TransferStorage : MonoBehaviour {
     private Storage myStorage;
     private SquirrelMovement squirrel;
     private Storage storageContainer;
-    public float waitTimer = 2;
+    public bool isBoosted;
+
+    public float WaitTimer {
+        get => PlayerPrefs.GetFloat(name+"Timer",2f);
+        set => PlayerPrefs.SetFloat(name+"Timer",value);
+    }
 
     private void Start() {
         myStorage = GetComponent<Storage>();
@@ -15,7 +21,7 @@ public class TransferStorage : MonoBehaviour {
     }
 
     IEnumerator startTransfer() {
-        yield return new WaitForSeconds(waitTimer);
+        yield return new WaitForSeconds(WaitTimer);
         squirrel.isTransfering = false;
     }
 
@@ -27,17 +33,25 @@ public class TransferStorage : MonoBehaviour {
 
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (myStorage.currentAmount > 0) {
-            if (other.CompareTag("MotherTree")) {
+        if (myStorage.CurrentAmount > 0) {
+            if (other.CompareTag("MotherTree") && !isBoosted) {
                 var motherTree = other.GetComponent<MotherTree>();
                 squirrel.isTransfering = true;
                 StartCoroutine(startTransfer());
-                motherTree.nuts.ResourceAmount += myStorage.currentAmount;
-                myStorage.ReduceAmount(myStorage.currentAmount);
+                motherTree.nuts.ResourceAmount += myStorage.CurrentAmount;
+                myStorage.ReduceAmount(myStorage.CurrentAmount);
+            }
+
+            if (other.CompareTag("MotherTree") && isBoosted) {
+                var motherTree = other.GetComponent<MotherTree>();
+                squirrel.isTransfering = true;
+                StartCoroutine(startTransfer());
+                motherTree.nuts.ResourceAmount += myStorage.CurrentAmount * 10;
+                myStorage.ReduceAmount(myStorage.CurrentAmount);
             }
         }
 
-        if (myStorage.currentAmount > 0) {
+        if (myStorage.CurrentAmount > 0) {
             if (other.CompareTag("ElevatorStorage")) {
                 storageContainer = other.GetComponent<Storage>();
                 ElevatorStorageTransfer();
@@ -51,18 +65,18 @@ public class TransferStorage : MonoBehaviour {
     }
 
     private void ElevatorStorageTransfer() {
-        var possibleGiveAmount = storageContainer.capacity - storageContainer.currentAmount;
-        if (possibleGiveAmount >= myStorage.currentAmount) {
+        var possibleGiveAmount = storageContainer.Capacity - storageContainer.CurrentAmount;
+        if (possibleGiveAmount >= myStorage.CurrentAmount) {
             squirrel.isTransfering = true;
             squirrel.isWaiting = false;
             StartCoroutine(startTransfer());
-            storageContainer.currentAmount += myStorage.currentAmount;
-            myStorage.ReduceAmount(myStorage.currentAmount);
-        } else if (possibleGiveAmount <= myStorage.currentAmount && possibleGiveAmount != 0) {
+            storageContainer.CurrentAmount += myStorage.CurrentAmount;
+            myStorage.ReduceAmount(myStorage.CurrentAmount);
+        } else if (possibleGiveAmount <= myStorage.CurrentAmount && possibleGiveAmount != 0) {
             squirrel.isWaiting = false;
             squirrel.isTransfering = true;
             StartCoroutine(startTransfer());
-            storageContainer.currentAmount += possibleGiveAmount;
+            storageContainer.CurrentAmount += possibleGiveAmount;
             myStorage.ReduceAmount(possibleGiveAmount);
         } else if (possibleGiveAmount == 0) {
             squirrel.isWaiting = true;
@@ -70,15 +84,15 @@ public class TransferStorage : MonoBehaviour {
     }
 
     private void StorageTransfer() {
-        if (storageContainer.currentAmount > 0 && myStorage.currentAmount < myStorage.capacity) {
-            var possibleTakeAmaount = myStorage.capacity - myStorage.currentAmount;
-            if (possibleTakeAmaount > storageContainer.currentAmount) {
-                myStorage.currentAmount += storageContainer.currentAmount;
-                storageContainer.ReduceAmount(storageContainer.currentAmount);
+        if (storageContainer.CurrentAmount > 0 && myStorage.CurrentAmount < myStorage.Capacity) {
+            var possibleTakeAmaount = myStorage.Capacity - myStorage.CurrentAmount;
+            if (possibleTakeAmaount > storageContainer.CurrentAmount) {
+                myStorage.CurrentAmount += storageContainer.CurrentAmount;
+                storageContainer.ReduceAmount(storageContainer.CurrentAmount);
                 squirrel.isTransfering = true;
                 StartCoroutine(startTransfer());
             } else {
-                myStorage.currentAmount += possibleTakeAmaount;
+                myStorage.CurrentAmount += possibleTakeAmaount;
                 storageContainer.ReduceAmount(possibleTakeAmaount);
                 squirrel.isTransfering = true;
                 StartCoroutine(startTransfer());
@@ -86,8 +100,8 @@ public class TransferStorage : MonoBehaviour {
         } else if (!storageContainer.hasCapacity) {
             squirrel.isTransfering = true;
             StartCoroutine(startTransfer());
-            var possibleTakeAmaount = myStorage.capacity - myStorage.currentAmount;
-            myStorage.currentAmount += possibleTakeAmaount;
+            var possibleTakeAmaount = myStorage.Capacity - myStorage.CurrentAmount;
+            myStorage.CurrentAmount += possibleTakeAmaount;
         }
     }
 }

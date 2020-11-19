@@ -1,22 +1,24 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PopUpMenu : MonoBehaviour
 {
-
     public Text popUpMenuText;
+    public Text popupMenuRes;
     public SaveTime SaveTime;
-    
-    
+    public AddOfflineRes AddOfflineRes;
+
     void Start()
     {
-        this.popUpMenuText.text = "Test";  // whatever the fuck, waiting for next week and i will add what values shall be shown
+        this.popUpMenuText.text = $"Welcome back, this is the time you were last online: {SaveTime.timeSaveQuit}";
+        this.popupMenuRes.text =
+            $"This is the amount of resources you have harvested while you were offline: {AddOfflineRes.addOfflineRes}";
     }
-    
+
     void Update()
     {
-        
     }
 }

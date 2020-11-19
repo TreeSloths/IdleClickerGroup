@@ -6,11 +6,20 @@ using UnityEngine.UI;
 
 public class Storage : MonoBehaviour {
 
-    public int currentAmount;
-    public int capacity = 50;
+    
     public bool hasCapacity;
 
-    public bool HasSpace => currentAmount < capacity;
+    public bool HasSpace => CurrentAmount < Capacity;
+
+    
+    public int Capacity {
+        get => PlayerPrefs.GetInt(name+"capacity",10);
+        set => PlayerPrefs.SetInt(name+"capacity",value);
+    }
+    public int CurrentAmount {
+        get => PlayerPrefs.GetInt(name+"currentAmount",0);
+        set { PlayerPrefs.SetInt(name + "currentAmount", value); }
+    }
 
     private void Update() {
      
@@ -18,13 +27,13 @@ public class Storage : MonoBehaviour {
 
     public void AddAmount(int amount) {
         if (amount <= 0) {
-            currentAmount += amount;
+            CurrentAmount += amount;
         }
     }
 
     public void ReduceAmount(int amount) {
-        if (currentAmount >= amount) {
-            currentAmount -= amount;
+        if (CurrentAmount >= amount) {
+            CurrentAmount -= amount;
         }
     }
     

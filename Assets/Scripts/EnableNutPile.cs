@@ -15,7 +15,7 @@ public class EnableNutPile : MonoBehaviour
 
     void Update()
     {
-        if (storageContainer.currentAmount > 0)
+        if (storageContainer.CurrentAmount > 0)
         {
             GetComponent<SpriteRenderer>().enabled = true;
         }

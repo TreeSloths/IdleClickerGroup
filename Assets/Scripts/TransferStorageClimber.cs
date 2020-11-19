@@ -33,7 +33,7 @@ public class TransferStorageClimber : MonoBehaviour {
             StorageTransfer();
         }
 
-        if (myStorage.currentAmount > 0) {
+        if (myStorage.CurrentAmount > 0) {
             if (other.CompareTag("Storage")) {
                 storageContainer = other.GetComponent<Storage>();
                 ElevatorStorageTransfer();
@@ -42,18 +42,18 @@ public class TransferStorageClimber : MonoBehaviour {
     }
 
     private void ElevatorStorageTransfer() {
-        var possibleGiveAmount = storageContainer.capacity - storageContainer.currentAmount;
-        if (possibleGiveAmount >= myStorage.currentAmount) {
+        var possibleGiveAmount = storageContainer.Capacity - storageContainer.CurrentAmount;
+        if (possibleGiveAmount >= myStorage.CurrentAmount) {
             squirrel.isTransfering = true;
             squirrel.isWaiting = false;
             StartCoroutine(startTransfer());
-            storageContainer.currentAmount += myStorage.currentAmount;
-            myStorage.ReduceAmount(myStorage.currentAmount);
-        } else if (possibleGiveAmount <= myStorage.currentAmount && possibleGiveAmount != 0) {
+            storageContainer.CurrentAmount += myStorage.CurrentAmount;
+            myStorage.ReduceAmount(myStorage.CurrentAmount);
+        } else if (possibleGiveAmount <= myStorage.CurrentAmount && possibleGiveAmount != 0) {
             squirrel.isWaiting = false;
             squirrel.isTransfering = true;
             StartCoroutine(startTransfer());
-            storageContainer.currentAmount += possibleGiveAmount;
+            storageContainer.CurrentAmount += possibleGiveAmount;
             myStorage.ReduceAmount(possibleGiveAmount);
         } else if (possibleGiveAmount == 0) {
             squirrel.isWaiting = true;
@@ -61,15 +61,15 @@ public class TransferStorageClimber : MonoBehaviour {
     }
 
     private void StorageTransfer() {
-        if (storageContainer.currentAmount > 0 && myStorage.currentAmount < myStorage.capacity) {
-            var possibleTakeAmaount = myStorage.capacity - myStorage.currentAmount;
-            if (possibleTakeAmaount > storageContainer.currentAmount) {
-                myStorage.currentAmount += storageContainer.currentAmount;
-                storageContainer.ReduceAmount(storageContainer.currentAmount);
+        if (storageContainer.CurrentAmount > 0 && myStorage.CurrentAmount < myStorage.Capacity) {
+            var possibleTakeAmaount = myStorage.Capacity - myStorage.CurrentAmount;
+            if (possibleTakeAmaount > storageContainer.CurrentAmount) {
+                myStorage.CurrentAmount += storageContainer.CurrentAmount;
+                storageContainer.ReduceAmount(storageContainer.CurrentAmount);
                 squirrel.isTransfering = true;
                 StartCoroutine(startTransfer());
             } else {
-                myStorage.currentAmount += possibleTakeAmaount;
+                myStorage.CurrentAmount += possibleTakeAmaount;
                 storageContainer.ReduceAmount(possibleTakeAmaount);
                 squirrel.isTransfering = true;
                 StartCoroutine(startTransfer());
@@ -77,13 +77,13 @@ public class TransferStorageClimber : MonoBehaviour {
         } else if (!storageContainer.hasCapacity) {
             squirrel.isTransfering = true;
             StartCoroutine(startTransfer());
-            var possibleTakeAmaount = myStorage.capacity - myStorage.currentAmount;
-            myStorage.currentAmount += possibleTakeAmaount;
+            var possibleTakeAmaount = myStorage.Capacity - myStorage.CurrentAmount;
+            myStorage.CurrentAmount += possibleTakeAmaount;
         }
     }
     private void TurnAroundIfFull()
     {
-        if (myStorage.currentAmount >= myStorage.capacity)
+        if (myStorage.CurrentAmount >= myStorage.Capacity)
         {
             transform.eulerAngles = new Vector3(180, 0, 0);
             squirrel.movingUp = false;

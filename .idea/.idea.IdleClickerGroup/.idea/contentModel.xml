@@ -9,6 +9,7 @@
       <e p="Assets" t="Include">
         <e p="FullscreenSwitch.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="AddOfflineRes.cs" t="Include" />
           <e p="AlternativePathMovement" t="Include">
             <e p="FollowPath.cs" t="Include" />
             <e p="MovementPath.cs" t="Include" />
@@ -16,15 +17,20 @@
           <e p="Boosters.cs" t="Include" />
           <e p="ClimbingSquirrel.cs" t="Include" />
           <e p="EnableNutPile.cs" t="Include" />
+          <e p="IncomeBooster.cs" t="Include" />
           <e p="MotherTree.cs" t="Include" />
           <e p="NutProduction.cs" t="Include" />
           <e p="Nuttap.cs" t="Include" />
+          <e p="Prestige.cs" t="Include" />
           <e p="Resource.cs" t="Include" />
           <e p="SaveTime.cs" t="Include" />
           <e p="SquirrelMovement.cs" t="Include" />
           <e p="Storage.cs" t="Include" />
           <e p="TransferStorage.cs" t="Include" />
           <e p="TransferStorageClimber.cs" t="Include" />
+          <e p="UnlockBranch.cs" t="Include" />
+          <e p="UpgradeClimbingSquirrel.cs" t="Include" />
+          <e p="UpgradeGroundSquirrel.cs" t="Include" />
           <e p="UpgradeSquirrel.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
