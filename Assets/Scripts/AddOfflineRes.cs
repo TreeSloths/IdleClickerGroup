@@ -10,49 +10,28 @@ public class AddOfflineRes : MonoBehaviour
     public float offlineRes = 0.6f;
     public double production;
     public long nowMinusThen;
-    public int amountOfBoostFour;
 
     private void Start()
     {
         nowMinusThen = SaveTime.NowinSeconds - SaveTime.Quitinseconds;
-        //   Debug.Log(nowMinusThen);
+        Debug.Log(nowMinusThen);
         production = nowMinusThen * offlineRes;
         this.Resource.ResourceAmount += Mathf.RoundToInt((float) production);
-        Debug.Log($"{nowMinusThenSave}");
-        nowMinusThenSave += Convert.ToInt32(nowMinusThen);
+        nowMinusThenSave = nowMinusThen.ToString();
     }
-
-    private void OnApplicationQuit()
+    
+    public string nowMinusThenSave
     {
-        
+        get => PlayerPrefs.GetString("MinusSaved", "");
+        set => PlayerPrefs.SetString("MinusSaved", value);
     }
-
-    public int nowMinusThenSave
+    
+    private void boostFourHours()
     {
-        get => PlayerPrefs.GetInt("MinusSaved", 0);
-        set => PlayerPrefs.SetInt("MinusSaved", value);
-    }
-
-
-    public void OnBoosterClickFour()
-    {
-        amountOfBoostFour++;
-    }
-
-
-    public void boostFourHours()
-    {
-        if (Convert.ToInt64(nowMinusThenSave) <= 14400)
+        while (Convert.ToInt64(nowMinusThenSave) != 14400)
         {
             var boost = offlineRes * 4;
         }
     }
-
-    public void boostTwoHours()
-    {
-        if (Convert.ToInt64(nowMinusThenSave) <= 7200)
-        {
-            var boost = offlineRes * 2;
-        }
-    }
+    
 }

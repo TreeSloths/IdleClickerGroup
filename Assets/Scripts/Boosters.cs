@@ -35,7 +35,7 @@ public class Boosters : MonoBehaviour {
         }
 
         climbingSquirrel.speed -= speedModifier;
-        transferClimber.waitTimer += timeModifier;
+        transferClimber.WaitTimer += timeModifier;
         isBoosting = false;
     }
 
@@ -62,7 +62,7 @@ public class Boosters : MonoBehaviour {
 
            
             climbingSquirrel.speed += speedModifier;
-            transferClimber.waitTimer -= timeModifier;
+            transferClimber.WaitTimer -= timeModifier;
 
             StartCoroutine(BoostFor5MIN());
             isBoosting = true;
