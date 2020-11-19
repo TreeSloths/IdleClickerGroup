@@ -13,8 +13,7 @@ public class SaveTime : MonoBehaviour
     {
         get
         {
-            DateTime converting = Convert.ToDateTime(timeSaveQuit);
-            return Convert.ToInt64(converting.Subtract(this.startOfTime).TotalSeconds);
+            return long.Parse(timeSaveQuit);
         }
     }
     
@@ -27,12 +26,12 @@ public class SaveTime : MonoBehaviour
     private void Start()
     {
         systemStart = DateTime.Now;
-       // Debug.Log($"{NowinSeconds}");
+        Debug.Log($"{NowinSeconds}");
     }
 
     private void OnApplicationQuit()
     {
-        systemQuit = DateTime.Now;
+      var systemQuit = NowinSeconds;
         timeSaveQuit = systemQuit.ToString();
     }
 
