@@ -7,18 +7,17 @@ public class AddOfflineRes : MonoBehaviour
 {
     public SaveTime SaveTime;
     public Resource Resource;
-    public float offlineRes;
+    public float offlineRes = 0.6f;
     public float addingResToTime;
     public float addOfflineRes;
     public double production;
-
+    public long nowMinusThen;
     private void Start()
     {
-        var _nowMinusThen = SaveTime.NowinSeconds - SaveTime.Quitinseconds;
-        Debug.Log(_nowMinusThen);
+        nowMinusThen = SaveTime.NowinSeconds - SaveTime.Quitinseconds;
+        Debug.Log(nowMinusThen);
         // DO NOT INSERT ANYTHING IN addingResToTime
-        production = _nowMinusThen * offlineRes;
+        production = nowMinusThen * offlineRes;
         this.Resource.ResourceAmount += Mathf.RoundToInt((float) production);
-        // LÄGG TILL NUTS SCRIPT OCH LÄGG TILL PLAYERPREFS NUTS HAND I HAND MED SEKUNDERNA
     }
 }
