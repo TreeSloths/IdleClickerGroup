@@ -10,9 +10,7 @@ public class SquirrelMovement : MonoBehaviour
     private bool collided;
     public bool isTransfering;
     public bool isWaiting;
-    public SpriteRenderer spriteRenderer;
-    public Sprite newSprite;
-    public Sprite[] spriteArray;
+    public Animator animator;
 
     public void Movement() {
         if (!isTransfering && !isWaiting) {
@@ -26,18 +24,14 @@ public class SquirrelMovement : MonoBehaviour
     void Update()
     {
         Movement();
-        ChangeSprite();
-    }
-
-    void ChangeSprite()
-    {
+        
         if (isTransfering || isWaiting)
         {
-            spriteRenderer.sprite = spriteArray[1];
+            animator.SetBool("Transfer", true);
         }
         else
         {
-            spriteRenderer.sprite = spriteArray[0];
+            animator.SetBool("Transfer", false);
         }
     }
 
