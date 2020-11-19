@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3354698201527076832}
   - component: {fileID: 1583622904}
   - component: {fileID: 1583622910}
+  - component: {fileID: 2664647980749592403}
   m_Layer: 0
   m_Name: rolling_squirrel
   m_TagString: Untagged
@@ -139,11 +140,7 @@ MonoBehaviour:
   speed: 3
   isTransfering: 0
   isWaiting: 0
-  spriteRenderer: {fileID: 3354698201527076837}
-  newSprite: {fileID: -3481638131605163182, guid: 11d54f255b054ba46995906ced83b1b3, type: 3}
-  spriteArray:
-  - {fileID: -1853950295816597105, guid: 5154e6e5c008d9a40ab09e5cb403777c, type: 3}
-  - {fileID: -3481638131605163182, guid: 11d54f255b054ba46995906ced83b1b3, type: 3}
+  animator: {fileID: 2664647980749592403}
 --- !u!114 &1583622904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,8 +153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1fa1f8a86c38d49afb4b3c5a055521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAmount: 0
-  capacity: 50
   hasCapacity: 1
 --- !u!114 &1583622910
 MonoBehaviour:
@@ -171,4 +166,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02cbba81ee5eded42a42187d967ffa1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTimer: 2
+  isBoosted10: 0
+  isBoosted5: 0
+--- !u!95 &2664647980749592403
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3354698201527076833}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9614846e19e5c35438d3d442c6686cc3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
