@@ -11,7 +11,7 @@ public class UpgradeClimbingSquirrel : MonoBehaviour {
     public float priceMultiplier = 2.2f;
     public float speedModifier = 1.3f;
     private Storage storage;
-    private TransferStorage transfer;
+    private TransferStorageClimber transfer;
 
     private float timeModifier;
    // public Text labelText;
@@ -53,7 +53,7 @@ public class UpgradeClimbingSquirrel : MonoBehaviour {
 
     private void Start() {
         storage = squirrel.GetComponent<Storage>();
-        transfer = squirrel.GetComponent<TransferStorage>();
+        transfer = squirrel.GetComponent<TransferStorageClimber>();
        // labelText.text = $"Upgrade for {Price}\n lvl {Level}";
         storage.Capacity = StorageCapacity;
         transfer.WaitTimer = WaitTimer;
