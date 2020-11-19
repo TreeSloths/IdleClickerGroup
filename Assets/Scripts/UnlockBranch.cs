@@ -9,7 +9,8 @@ public class UnlockBranch : MonoBehaviour
     public Resource nuts;
     public GameObject rollingSquirrel;
 
-    public GameObject upgradeMenuButtonObject;
+    public GameObject UpgradeSquirrelButton;
+    
     public GameObject padlockBar;
     public GameObject padlock;
     public Text padlockText;
@@ -33,8 +34,9 @@ public class UnlockBranch : MonoBehaviour
     private void Update() {
         if (IsUnlocked) {
             rollingSquirrel.SetActive(true);
-            upgradeMenuButtonObject.GetComponent<EmptyGraphic>().enabled = true;
+            UpgradeSquirrelButton.GetComponent<Image>().enabled = true;
             padlockBar.GetComponent<PadLockBarAnim>().Unlock();
+            this.GetComponent<EmptyGraphic>().enabled = false;
         }
     }
 
@@ -74,6 +76,7 @@ public class UnlockBranch : MonoBehaviour
         padlockBar.GetComponent<Image>().enabled = false;
         padlock.GetComponent<Image>().enabled = false;
         padlockText.GetComponent<Text>().enabled = false;
-        upgradeMenuButtonObject.GetComponent<EmptyGraphic>().enabled = false;
+        UpgradeSquirrelButton.GetComponent<Image>().enabled = true;
+        this.GetComponent<EmptyGraphic>().enabled = false;
     }
 }
