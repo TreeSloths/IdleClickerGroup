@@ -10,13 +10,12 @@ public class UpgradeSquirrel : MonoBehaviour {
     public Resource nuts;
     public Storage elevatorStorage;
 
-    public float waitTimerModifier;
     public int capacitymodifier = 10;
     public float priceMultiplier = 2.2f;
     public float speedModifier = 1.2f;
     private Storage storage;
     private TransferStorage transfer;
-   // public Text labelText;
+    public Text labelText;
     
 
     public float SquirrelSpeed {
@@ -56,7 +55,7 @@ public class UpgradeSquirrel : MonoBehaviour {
     private void Start() {
         storage = squirrel.GetComponent<Storage>();
         transfer = squirrel.GetComponent<TransferStorage>();
-       // labelText.text = $"Upgrade for {Price}\n lvl {Level}";
+        labelText.text = $"Level : {Level}\nPrice {Price} Nuts";
         storage.Capacity = StorageCapacity;
         transfer.WaitTimer = WaitTimer;
         squirrel.speed = SquirrelSpeed;
@@ -76,12 +75,10 @@ public class UpgradeSquirrel : MonoBehaviour {
             Price *= Mathf.RoundToInt(priceMultiplier);
             elevatorStorage.Capacity += capacitymodifier;
             Level++;
-           
-            if (WaitTimer > 0.4) {
+            if (WaitTimer > 0.5) {
                 WaitTimer -= 0.05f;
-                transfer.WaitTimer = WaitTimer;
             }
-           // labelText.text = $"Upgrade for {Price}\n lvl {Level}";
+            labelText.text = $"Level : {Level}\nPrice {Price} Nuts";
         }
     }
 }

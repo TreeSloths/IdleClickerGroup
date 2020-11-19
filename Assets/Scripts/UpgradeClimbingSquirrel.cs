@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UpgradeClimbingSquirrel : MonoBehaviour {
-      public ClimbingSquirrel squirrel;
+    public ClimbingSquirrel squirrel;
     public Resource nuts;
     public Storage groundStorage;
 
@@ -11,11 +12,11 @@ public class UpgradeClimbingSquirrel : MonoBehaviour {
     public float priceMultiplier = 2.2f;
     public float speedModifier = 1.3f;
     private Storage storage;
-    private TransferStorage transfer;
+    private TransferStorageClimber transfer;
 
     private float timeModifier;
-   // public Text labelText;
-    
+    public Text labelText;
+
 
     public float SquirrelSpeed {
         get => PlayerPrefs.GetFloat(squirrel.name + "Speed", 1.5f);
@@ -53,8 +54,8 @@ public class UpgradeClimbingSquirrel : MonoBehaviour {
 
     private void Start() {
         storage = squirrel.GetComponent<Storage>();
-        transfer = squirrel.GetComponent<TransferStorage>();
-       // labelText.text = $"Upgrade for {Price}\n lvl {Level}";
+        transfer = squirrel.GetComponent<TransferStorageClimber>();
+        labelText.text = $"Level : {Level}\nPrice {Price} Nuts";
         storage.Capacity = StorageCapacity;
         transfer.WaitTimer = WaitTimer;
         squirrel.speed = SquirrelSpeed;
@@ -74,13 +75,11 @@ public class UpgradeClimbingSquirrel : MonoBehaviour {
             Price *= Mathf.RoundToInt(priceMultiplier);
             groundStorage.Capacity += capacitymodifier;
             Level++;
-            
-            if (WaitTimer > 0.4) {
+            if (WaitTimer > 0.5) {
                 WaitTimer -= 0.05f;
-                transfer.WaitTimer = WaitTimer;
             }
-           // labelText.text = $"Upgrade for {Price}\n lvl {Level}";
+
+            labelText.text = $"Level : {Level}\nPrice {Price} Nuts";
         }
     }
 }
-
