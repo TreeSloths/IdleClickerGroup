@@ -18,7 +18,7 @@ public class AddOfflineRes : MonoBehaviour
         Debug.Log(_nowMinusThen);
         // DO NOT INSERT ANYTHING IN addingResToTime
         production = _nowMinusThen * offlineRes;
-        this.Resource.ResourceAmount += Mathf.RoundToInt((float)production);
+        this.Resource.ResourceAmount += Mathf.RoundToInt((float) production);
         // LÄGG TILL NUTS SCRIPT OCH LÄGG TILL PLAYERPREFS NUTS HAND I HAND MED SEKUNDERNA
     }
 }

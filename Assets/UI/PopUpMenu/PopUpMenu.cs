@@ -14,10 +14,8 @@ public class PopUpMenu : MonoBehaviour
 
     void Start()
     {
-        this.popUpMenuText.text = $"Welcome back, this is the time you were last online: {SaveTime.systemStart}";
+        this.popUpMenuText.text = $"This is the time you were last online: {SaveTime.systemStart}";
         this.popupMenuRes.text =
             $"This is the amount of resources you have harvested while you were offline: {AddOfflineRes.production}";
     }
-
-    
 }

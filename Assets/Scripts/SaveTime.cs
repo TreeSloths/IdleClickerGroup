@@ -11,16 +11,12 @@ public class SaveTime : MonoBehaviour
 
     public long Quitinseconds
     {
-        get
-        {
-            return long.Parse(timeSaveQuit);
-        }
+        get { return long.Parse(timeSaveQuit); }
     }
-    
-    public long NowinSeconds {
-        get {
-            return Convert.ToInt64(DateTime.UtcNow.Subtract(this.startOfTime).TotalSeconds);
-        }
+
+    public long NowinSeconds
+    {
+        get { return Convert.ToInt64(DateTime.UtcNow.Subtract(this.startOfTime).TotalSeconds); }
     }
 
     private void Start()
@@ -31,7 +27,7 @@ public class SaveTime : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-      var systemQuit = NowinSeconds;
+        var systemQuit = NowinSeconds;
         timeSaveQuit = systemQuit.ToString();
     }
 
