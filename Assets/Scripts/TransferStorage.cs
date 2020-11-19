@@ -35,7 +35,7 @@ public class TransferStorage : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (myStorage.CurrentAmount > 0) {
-            if (other.CompareTag("MotherTree") && !isBoosted10) {
+            if (other.CompareTag("MotherTree") && !isBoosted10 && !isBoosted5) {
                 var motherTree = other.GetComponent<MotherTree>();
                 squirrel.isTransfering = true;
                 StartCoroutine(startTransfer());
