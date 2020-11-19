@@ -7,7 +7,8 @@ public class TransferStorage : MonoBehaviour {
     private Storage myStorage;
     private SquirrelMovement squirrel;
     private Storage storageContainer;
-    public bool isBoosted;
+    public bool isBoosted10;
+    public bool isBoosted5;
 
     public float WaitTimer {
         get => PlayerPrefs.GetFloat(name+"Timer",2f);
@@ -33,7 +34,7 @@ public class TransferStorage : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (myStorage.CurrentAmount > 0) {
-            if (other.CompareTag("MotherTree") && !isBoosted) {
+            if (other.CompareTag("MotherTree") && !isBoosted10 && !isBoosted5) {
                 var motherTree = other.GetComponent<MotherTree>();
                 squirrel.isTransfering = true;
                 StartCoroutine(startTransfer());
@@ -41,11 +42,18 @@ public class TransferStorage : MonoBehaviour {
                 myStorage.ReduceAmount(myStorage.CurrentAmount);
             }
 
-            if (other.CompareTag("MotherTree") && isBoosted) {
+            if (other.CompareTag("MotherTree") && isBoosted10) {
                 var motherTree = other.GetComponent<MotherTree>();
                 squirrel.isTransfering = true;
                 StartCoroutine(startTransfer());
                 motherTree.nuts.ResourceAmount += myStorage.CurrentAmount * 10;
+                myStorage.ReduceAmount(myStorage.CurrentAmount);
+            }
+            if (other.CompareTag("MotherTree") && isBoosted5) {
+                var motherTree = other.GetComponent<MotherTree>();
+                squirrel.isTransfering = true;
+                StartCoroutine(startTransfer());
+                motherTree.nuts.ResourceAmount += myStorage.CurrentAmount * 8;
                 myStorage.ReduceAmount(myStorage.CurrentAmount);
             }
         }
