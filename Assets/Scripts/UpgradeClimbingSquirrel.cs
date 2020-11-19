@@ -74,8 +74,10 @@ public class UpgradeClimbingSquirrel : MonoBehaviour {
             Price *= Mathf.RoundToInt(priceMultiplier);
             groundStorage.Capacity += capacitymodifier;
             Level++;
-            if (WaitTimer > 0.5) {
+            
+            if (WaitTimer > 0.4) {
                 WaitTimer -= 0.05f;
+                transfer.WaitTimer = WaitTimer;
             }
            // labelText.text = $"Upgrade for {Price}\n lvl {Level}";
         }
