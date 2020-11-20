@@ -11,8 +11,10 @@ public class PopUpMenu : MonoBehaviour
     public Text popUpMenuResV;
     public SaveTime SaveTime;
     public AddOfflineRes AddOfflineRes;
-    void Start()
+    void Update()
     {
-        this.popUpMenuText.text = $"This is the time you were last online: {SaveTime.Systemquit1}";
+        this.popUpMenuText.text = $"This is the time you were last online: {SaveTime.Quittime2}";
+        this.popupMenuRes.text = $"This is the amount of resources you have harvested while you were offline:";
+        this.popUpMenuResV.text = $"{Mathf.RoundToInt((float)AddOfflineRes.production)}";
     }
 }

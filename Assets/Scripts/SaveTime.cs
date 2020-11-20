@@ -8,9 +8,8 @@ public class SaveTime : MonoBehaviour
     public DateTime systemStart;
     public DateTime systemQuit;
     private readonly DateTime startOfTime = new DateTime(1970, 1, 1, 0, 0, 0);
-    public DateTime Systemquit1;
-    
-    
+    public DateTime Quittime;
+
     public long Quitinseconds
     {
         get { return long.Parse(timeSaveQuit); }
@@ -28,15 +27,21 @@ public class SaveTime : MonoBehaviour
     }
 
     private void OnApplicationQuit()
-    { 
-        Systemquit1 = DateTime.Now;
+    {
+        Quittime2 = DateTime.Now.ToString();  
         var systemQuit = NowinSeconds;
         timeSaveQuit = systemQuit.ToString();
     }
 
+    public string Quittime2
+    {
+        get => PlayerPrefs.GetString("QuitTimeD", "");
+        set => PlayerPrefs.SetString("QuitTimeD", value);
+    }
+    
     public string timeSaveQuit
     {
-        get => PlayerPrefs.GetString("QuitTime", "");
+        get => PlayerPrefs.GetString("QuitTime", NowinSeconds.ToString());
         set => PlayerPrefs.SetString("QuitTime", value);
     }
 }
