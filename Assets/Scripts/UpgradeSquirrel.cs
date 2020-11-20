@@ -55,7 +55,7 @@ public class UpgradeSquirrel : MonoBehaviour {
     private void Start() {
         storage = squirrel.GetComponent<Storage>();
         transfer = squirrel.GetComponent<TransferStorage>();
-        labelText.text = $"Nut Picker\nLevel : {Level}\nPrice {Price} Nuts";
+        labelText.text = $"Nut Picker  Level : {Level}\nPrice {Price} Nuts\n+20% Speed\n+{capacitymodifier} Capacity\n -0.05s Transfer time";
         storage.Capacity = StorageCapacity;
         transfer.WaitTimer = WaitTimer;
         squirrel.speed = SquirrelSpeed;
@@ -79,7 +79,7 @@ public class UpgradeSquirrel : MonoBehaviour {
                 WaitTimer -= 0.05f;
                 transfer.WaitTimer = WaitTimer;
             }
-            labelText.text = $"Nut Picker\nLevel : {Level}\nPrice {Price} Nuts";
+            labelText.text = $"Nut Picker  Level : {Level}\nPrice {Price} Nuts\n+20% Speed\n+{capacitymodifier} Capacity\n -0.05s Transfer time";
         }
     }
 }
