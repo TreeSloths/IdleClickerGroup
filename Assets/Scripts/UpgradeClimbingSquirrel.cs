@@ -77,6 +77,7 @@ public class UpgradeClimbingSquirrel : MonoBehaviour {
             Level++;
             if (WaitTimer > 0.5) {
                 WaitTimer -= 0.05f;
+                transfer.WaitTimer = WaitTimer;
             }
 
             labelText.text = $"Mr.Nutty\nLevel : {Level}\nPrice {Price} Nuts";
