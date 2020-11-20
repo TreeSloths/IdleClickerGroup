@@ -8,13 +8,9 @@ public class ShowWelcomeMenuOnceTracker : MonoBehaviour
     public PopUpMenuButtom PopUpMenuButtom;
     public GameObject popUpMenu;
 
-    private void Start()
+    private void Update()
     {
-        if (ShowWelcomeOnce == 0)
-        {
-            popUpMenu.SetActive(true);
-        }
-        else if (ShowWelcomeOnce == 1)
+        if (ShowWelcomeOnce == 1)
         {
             popUpMenu.SetActive(false);
         }
