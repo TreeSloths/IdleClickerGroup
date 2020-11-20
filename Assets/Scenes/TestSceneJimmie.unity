@@ -6995,7 +6995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 687343c8904bfc5439d032b002c7f995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundSquirrel: {fileID: 0}
+  groundSquirrel: {fileID: 1202604803}
   nuts: {fileID: 11400000, guid: d92c75b300e97ae42870aee23acb1a81, type: 2}
   price: 1000
 --- !u!1 &668573800
@@ -7691,7 +7691,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.9765623, y: 0.1484835}
+  m_Offset: {x: -3.9765623, y: 0.107283875}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7702,7 +7702,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.872066, y: 1.0779657}
+  m_Size: {x: 0.872066, y: 1.160365}
   m_EdgeRadius: 0
 --- !u!1 &727117850
 GameObject:
@@ -29775,7 +29775,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.8710985, y: -1.3028144}
+  m_Offset: {x: -2.1595366, y: -1.067305}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -29786,7 +29786,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.8805943, y: 1.6836574}
+  m_Size: {x: 8.303718, y: 2.1546762}
   m_EdgeRadius: 0
 --- !u!114 &1604718280 stripped
 MonoBehaviour:
@@ -30199,7 +30199,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.096046835, y: 0.53317064}
+  m_Offset: {x: -0.096046835, y: 0.55018306}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -30210,7 +30210,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.96288246, y: 0.022000909}
+  m_Size: {x: 0.96288246, y: 0.040659726}
   m_EdgeRadius: 0
 --- !u!224 &1665697037 stripped
 RectTransform:
