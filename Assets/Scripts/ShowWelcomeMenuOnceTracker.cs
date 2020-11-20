@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 public class ShowWelcomeMenuOnceTracker : MonoBehaviour
 {
-    public PopUpMenuButtom PopUpMenuButtom;
     public GameObject popUpMenu;
     public GameObject WelcomeScreenTracker;
 
