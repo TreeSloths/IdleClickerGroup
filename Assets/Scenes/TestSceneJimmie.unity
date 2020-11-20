@@ -29643,11 +29643,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3354698201527076836, guid: 261ce9637cf4ae449a2cdec0e4269a76, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.41
+      value: -4.78
       objectReference: {fileID: 0}
     - target: {fileID: 3354698201527076836, guid: 261ce9637cf4ae449a2cdec0e4269a76, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.8
+      value: 1.81
       objectReference: {fileID: 0}
     - target: {fileID: 3354698201527076836, guid: 261ce9637cf4ae449a2cdec0e4269a76, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30303,7 +30303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3354698201527076836, guid: 261ce9637cf4ae449a2cdec0e4269a76, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.1
+      value: -4.9
       objectReference: {fileID: 0}
     - target: {fileID: 3354698201527076836, guid: 261ce9637cf4ae449a2cdec0e4269a76, type: 3}
       propertyPath: m_LocalPosition.y
@@ -35244,7 +35244,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.5655317, y: 0.06741135}
+  m_Offset: {x: 2.8551497, y: 0.07201421}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -35255,7 +35255,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6053028, y: 0.9708353}
+  m_Size: {x: 1.1845386, y: 1.1733606}
   m_EdgeRadius: 0
 --- !u!1 &1752677551
 GameObject:
@@ -46758,7 +46758,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.1518934, y: -1.487931}
+  m_Offset: {x: -2.237047, y: -1.3446598}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -46769,7 +46769,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.913588, y: 1.6288972}
+  m_Size: {x: 6.743281, y: 2.5562706}
   m_EdgeRadius: 0
 --- !u!114 &2125892889 stripped
 MonoBehaviour:
