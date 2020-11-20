@@ -53,7 +53,7 @@ public class UpgradeGroundSquirrel : MonoBehaviour{
     private void Start() {
         storage = squirrel.GetComponent<Storage>();
         transfer = squirrel.GetComponent<TransferStorage>();
-        labelText.text = $"Mrs.Nutty\nLevel : {Level}\nPrice {Price} Nuts";
+        labelText.text = $"Mrs.Nutty  Level : {Level}\nPrice {Price} Nuts\n+30% Speed\n+{capacitymodifier} Capacity\n -0.05s Transfer time";
         storage.Capacity = StorageCapacity;
         transfer.WaitTimer = WaitTimer;
         squirrel.speed = SquirrelSpeed;
@@ -77,7 +77,7 @@ public class UpgradeGroundSquirrel : MonoBehaviour{
                 WaitTimer -= 0.05f;
                 transfer.WaitTimer = WaitTimer;
             }
-            labelText.text = $"Mrs.Nutty\nLevel : {Level}\nPrice {Price} Nuts";
+            labelText.text = $"Mrs.Nutty  Level : {Level}\nPrice {Price} Nuts\n+30% Speed\n+{capacitymodifier} Capacity\n -0.05s Transfer time";
         }
     }
 }
