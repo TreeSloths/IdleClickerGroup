@@ -11,7 +11,6 @@ public class PopUpMenu : MonoBehaviour
     public Text popUpMenuResV;
     public SaveTime SaveTime;
     public AddOfflineRes AddOfflineRes;
-    
     void Start()
     {
         this.popUpMenuText.text = $"This is the time you were last online: {SaveTime.systemStart}";

@@ -58,8 +58,8 @@ public class AddOfflineRes : MonoBehaviour
 
     public int AmountofBoostsFour
     {
-        get => PlayerPrefs.GetInt("FoorHourBoostsSaved", 0);
-        set => PlayerPrefs.SetInt("FoorHourBoostsSaved", value);
+        get => PlayerPrefs.GetInt("FourHourBoostsSaved", 0);
+        set => PlayerPrefs.SetInt("FourHourBoostsSaved", value);
     }
 
     public int AmountofBoostsTwo
