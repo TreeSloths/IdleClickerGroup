@@ -521,6 +521,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2392575978353415379, guid: 44a47c9d2c957ff43a76cb337fb41468, type: 3}
+      propertyPath: Resource
+      value: 
+      objectReference: {fileID: 11400000, guid: d92c75b300e97ae42870aee23acb1a81, type: 2}
+    - target: {fileID: 2392575978353415379, guid: 44a47c9d2c957ff43a76cb337fb41468, type: 3}
+      propertyPath: SaveTime
+      value: 
+      objectReference: {fileID: 1072159216}
+    - target: {fileID: 2392575978353415379, guid: 44a47c9d2c957ff43a76cb337fb41468, type: 3}
       propertyPath: saveTime
       value: 
       objectReference: {fileID: 1072159216}

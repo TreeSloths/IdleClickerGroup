@@ -76,7 +76,7 @@ public class ExtendUpgradeBanner : MonoBehaviour
         {
             PointerEventData pointerData = new PointerEventData(EventSystem.current);
             pointerData.position = Input.mousePosition;
-            Debug.Log(pointerData.position);
+//            Debug.Log(pointerData.position);
             if (pointerData.position.x > Xmin && pointerData.position.x < Xmax && pointerData.position.y > Ymin && pointerData.position.y < Ymax )
             {
                 ExtendBanner();
