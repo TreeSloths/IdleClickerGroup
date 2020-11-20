@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UpgradeGroundSquirrel : MonoBehaviour{
   public SquirrelMovement squirrel;
@@ -12,7 +13,7 @@ public class UpgradeGroundSquirrel : MonoBehaviour{
     public float speedModifier = 1.3f;
     private Storage storage;
     private TransferStorage transfer;
-   // public Text labelText;
+    public Text labelText;
     
 
     public float SquirrelSpeed {
@@ -52,7 +53,7 @@ public class UpgradeGroundSquirrel : MonoBehaviour{
     private void Start() {
         storage = squirrel.GetComponent<Storage>();
         transfer = squirrel.GetComponent<TransferStorage>();
-       // labelText.text = $"Upgrade for {Price}\n lvl {Level}";
+        labelText.text = $"Mrs.Nutty\nLevel : {Level}\nPrice {Price} Nuts";
         storage.Capacity = StorageCapacity;
         transfer.WaitTimer = WaitTimer;
         squirrel.speed = SquirrelSpeed;
@@ -75,7 +76,7 @@ public class UpgradeGroundSquirrel : MonoBehaviour{
             if (WaitTimer > 0.5) {
                 WaitTimer -= 0.05f;
             }
-           // labelText.text = $"Upgrade for {Price}\n lvl {Level}";
+            labelText.text = $"Mrs.Nutty\nLevel : {Level}\nPrice {Price} Nuts";
         }
     }
 }
