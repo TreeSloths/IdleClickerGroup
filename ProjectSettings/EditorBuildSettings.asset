@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/Oskars_temp_scene.unity
-    guid: dc0bf3c8bf9cf6446b39fbbf8212a312
   - enabled: 1
     path: Assets/Scenes/StartScreen.unity
     guid: da4326d51463d6340b2afa48a1a0bc7b
