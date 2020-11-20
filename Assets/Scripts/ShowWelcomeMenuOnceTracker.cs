@@ -15,8 +15,7 @@ public class ShowWelcomeMenuOnceTracker : MonoBehaviour
             popUpMenu.SetActive(false);
         }
     }
-
-
+    
     public int ShowWelcomeOnce
     {
         get => PlayerPrefs.GetInt("FalseOrActiveV", 0);

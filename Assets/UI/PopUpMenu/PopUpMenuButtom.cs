@@ -13,6 +13,6 @@ public class PopUpMenuButtom : MonoBehaviour
     public void ClosePopUp()
     {
         popUpMenu.SetActive(false);
-        ShowWelcomeMenuOnceTracker.ShowWelcomeOnce++;
+        ShowWelcomeMenuOnceTracker.ShowWelcomeOnce = 1;
     }
 }
