@@ -524,6 +524,10 @@ PrefabInstance:
       propertyPath: saveTime
       value: 
       objectReference: {fileID: 1072159216}
+    - target: {fileID: 2392575978353415379, guid: 44a47c9d2c957ff43a76cb337fb41468, type: 3}
+      propertyPath: offlineRes
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 2392575978353415380, guid: 44a47c9d2c957ff43a76cb337fb41468, type: 3}
       propertyPath: m_Name
       value: OfflineResObject
