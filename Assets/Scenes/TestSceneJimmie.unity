@@ -23238,6 +23238,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5713948984047493648, guid: 494fecc4eb258f7448f217c9894b7357, type: 3}
+      propertyPath: ShowWelcomeMenuOnceTracker
+      value: 
+      objectReference: {fileID: 1491780219}
     - target: {fileID: 5713948984403024294, guid: 494fecc4eb258f7448f217c9894b7357, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
