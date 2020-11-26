@@ -2,29 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class ShowWelcomeMenuOnceTracker : MonoBehaviour
 {
     public GameObject popUpMenu;
     public GameObject WelcomeScreenTracker;
+    public static bool hasbeenshown = false;
+
 
     private void Update()
     {
-        if (ShowWelcomeOnce == 1)
-        {
-            popUpMenu.SetActive(false);
-        }
-
-        DontDestroyOnLoad(WelcomeScreenTracker);
+        DontDestroyOnLoad(this.gameObject);
     }
-
-    public int ShowWelcomeOnce
-    {
-        get => PlayerPrefs.GetInt("FalseOrActiveV", 0);
-        set => PlayerPrefs.SetInt("FalseOrActive", value);
-    }
-
-    private void OnApplicationQuit()
-    {
-        ShowWelcomeOnce = 0;
-    }
+    
 }

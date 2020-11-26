@@ -429,8 +429,8 @@ MonoBehaviour:
   popUpMenuText: {fileID: 5907105275458098801}
   popupMenuRes: {fileID: 6587287825348967212}
   popUpMenuResV: {fileID: 6587287826022358784}
-  SaveTime: {fileID: 0}
-  AddOfflineRes: {fileID: 0}
+  SaveTime: {fileID: 4646768533001393421, guid: 4956a370483e9e34e80691146be0cc7b, type: 3}
+  AddOfflineRes: {fileID: 2392575978353415379, guid: 44a47c9d2c957ff43a76cb337fb41468, type: 3}
 --- !u!1 &6587287826022358787
 GameObject:
   m_ObjectHideFlags: 0

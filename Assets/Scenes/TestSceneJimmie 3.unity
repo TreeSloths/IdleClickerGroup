@@ -5589,11 +5589,11 @@ PrefabInstance:
     - target: {fileID: 2761065050478653963, guid: 3e88bb81b65d8624e8d113083b770308, type: 3}
       propertyPath: popUpMenu
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 703145241}
     - target: {fileID: 2761065050478653963, guid: 3e88bb81b65d8624e8d113083b770308, type: 3}
       propertyPath: PopUpMenuButtom
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 376931125}
     - target: {fileID: 6551845401876391447, guid: 3e88bb81b65d8624e8d113083b770308, type: 3}
       propertyPath: m_Name
       value: WelcomeScreenTracker
@@ -6049,6 +6049,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97c1bd56cd67da7408c77ec2c8bad195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &376931125 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6587287824936268468, guid: 494fecc4eb258f7448f217c9894b7357, type: 3}
+  m_PrefabInstance: {fileID: 1157180856}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce187db218ceb3d4da23be5a0036e9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &440730383 stripped
@@ -7335,6 +7346,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &703145241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6587287825846792275, guid: 494fecc4eb258f7448f217c9894b7357, type: 3}
+  m_PrefabInstance: {fileID: 1157180856}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &707584525
 GameObject:
   m_ObjectHideFlags: 0

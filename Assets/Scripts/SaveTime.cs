@@ -44,4 +44,5 @@ public class SaveTime : MonoBehaviour
         get => PlayerPrefs.GetString("QuitTime", NowinSeconds.ToString());
         set => PlayerPrefs.SetString("QuitTime", value);
     }
+    
 }

@@ -6,6 +6,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Resource : ScriptableObject
 {
+    public double production;
     public int ResourceAmount
     {
         get => PlayerPrefs.GetInt(name, 0);
